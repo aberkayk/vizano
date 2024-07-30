@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import MobileNavbar from "@/components/mobile-navbar";
+import Footer from "@/components/footer";
 
 const font = Outfit({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <MobileNavbar />
         <Navbar />
         <main className="bg-secondary">{children}</main>
+        <Footer />
       </body>
     </html>
   );

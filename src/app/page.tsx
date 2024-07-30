@@ -3,8 +3,8 @@ import MotionDiv from "@/components/motion-div";
 
 export default function Home() {
   return (
-    <div className="h-[calc(100vh-70px)] w-full bg-secondary flex justify-center px-8">
-      <div className="xl:container flex flex-col gap-12 items-center pt-16 lg:pt-20">
+    <div className="w-full bg-secondary flex justify-center px-8">
+      <div className="xl:container flex flex-col gap-12 items-center py-16 lg:py-20">
         <MotionDiv
           initial="hidden"
           whileInView="visible"

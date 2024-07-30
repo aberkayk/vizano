@@ -23,7 +23,10 @@ const config = {
           green: "var(--brand-green)",
           text: "var(--brand-text)",
         },
-        text: "var(--text)",
+        text: {
+          DEFAULT: "var(--text)",
+          secondary: "var(--text-secondary)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

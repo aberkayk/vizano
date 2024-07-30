@@ -32,6 +32,7 @@
     --brand-text: #29a847;
     --brand-green: #007934;
     --text: #212529;
+    --text-secondary: #ffffff80;
   }
 
   .dark {
@@ -62,6 +63,7 @@
     --brand-text: #29a847;
     --brand-green: #007934;
     --text: #212529;
+    --text-secondary: #ffffff80;
   }
 }
 
