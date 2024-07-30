@@ -27,14 +27,14 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col gap-4 w-1/2 lg:w-1/3 lg:max-w-56">
             <h5 className="text-2xl">İletişim</h5>
-            <p className="flex gap-4 font-light">
+            <p className="flex gap-4 font-light text-white/70">
               <Mail />
               info@rentech.com.tr
             </p>
-            <p className="flex gap-4 font-light">
+            <p className="flex gap-4 font-light text-white/70">
               <Phone />0 (212) 222 22 22
             </p>
-            <p className="flex gap-4 font-light">
+            <p className="flex gap-4 font-light text-white/70">
               <MapPin />
               Metrocity İş Merkezi A Blok Kat:12 Şişli / İSTANBUL
             </p>
@@ -57,7 +57,7 @@ const Footer = () => {
             <h5 className="text-2xl">Rentech</h5>
             {navbarItems.map((item, index) => (
               <Link
-                className="hover:scale-105 transition"
+                className="hover:scale-105 transition text-white/70 hover:text-white"
                 href={item.href}
                 key={index.toString()}
               >
