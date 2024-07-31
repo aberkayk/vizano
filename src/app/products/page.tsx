@@ -6,46 +6,55 @@ import MobileImage from "../../../public/images/iphone15.webp";
 import ComputerImage from "../../../public/images/macbook.jpeg";
 import ScreenImage from "../../../public/images/screen.webp";
 import { ProductsAccordion } from "@/components/products-accordion";
+import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
 const ProductsPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
-      <div className="relative aspect-[3100/1500] w-full max-h-[600px]">
+    <div className="w-full min-h-screen flex flex-col items-center ">
+      <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
-        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-3xl xl:text-4xl font-semibold text-center">
+        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
           ÜRÜNLERİMİZ
         </p>
         <Image
           src={AboutImage}
           fill
           alt="About Us Image"
-          className="object-fit z-0"
+          className="object-cover object-center z-0"
         />
       </div>
+      <div className="w-full flex flex-col xl:container">
+        {/* Mobile */}
 
-      {/* Mobile */}
-      <div className="w-full py-16 flex flex-col gap-y-12 px-4">
-        <h1 className="text-4xl font-bold text-center">Cep Telefonu</h1>
-        <ProductsCarousel data={mobileData} />
-      </div>
+        <MotionDivLeft className="w-full py-16 flex flex-col gap-y-12 px-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-center">
+            Cep Telefonu
+          </h1>
+          <ProductsCarousel data={mobileData} />
+        </MotionDivLeft>
 
-      {/* Computer */}
-      <div className="w-full py-16 flex flex-col gap-y-12 px-4">
-        <h1 className="text-4xl font-bold text-center">Bilgisayar</h1>
-        <ProductsCarousel data={computerData} />
-      </div>
+        {/* Computer */}
+        <MotionDivRight className="w-full py-16 flex flex-col gap-y-12 px-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-center">
+            Bilgisayar
+          </h1>
+          <ProductsCarousel data={computerData} />
+        </MotionDivRight>
 
-      {/* Screen */}
-      <div className="w-full py-16 flex flex-col gap-y-12 px-4">
-        <h1 className="text-4xl font-bold text-center">Monitör</h1>
-        <ProductsCarousel data={screenData} />
-      </div>
+        {/* Screen */}
+        <MotionDivLeft className="w-full py-16 flex flex-col gap-y-12 px-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-center">
+            Monitör
+          </h1>
+          <ProductsCarousel data={screenData} />
+        </MotionDivLeft>
 
-      <div className="w-full px-4 my-8">
-        <h4 className="text-3xl font-bold text-center mb-6">
-          Sıkça Sorulan Sorular
-        </h4>
-        <ProductsAccordion />
+        <div className="w-full px-6 my-8">
+          <h4 className="text-3xl md:text-4xl font-bold text-center mb-6">
+            Sıkça Sorulan Sorular
+          </h4>
+          <ProductsAccordion />
+        </div>
       </div>
     </div>
   );

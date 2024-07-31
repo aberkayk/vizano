@@ -25,10 +25,10 @@ const ProductsCarousel = ({ data }: Props) => {
             className="h-full basis-1/2 sm:basis-1/3 lg:basis-1/4 ml-4"
             key={index}
           >
-            <div className="relative h-64 w-full  ">
+            <div className="relative h-64 w-full drop-shadow-sm">
               <Image
                 priority
-                className="object-contain rounded-lg "
+                className="object-fill rounded-lg drop-shadow-sm"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
                 src={item.img}

@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator";
 const Footer = () => {
   return (
     <div className="w-full bg-brand-green">
-      <div className="w-full xl:container flex gap-8 flex-col py-12 px-16">
+      <div className="w-full xl:container flex gap-8 flex-col py-12 px-8">
         {/* Top Info */}
         <div className="w-full flex gap-10 flex-col justify-center items-center text-center lg:hidden">
           <Link href="/">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <Separator className="w-full bg-text-secondary" />
+        <Separator className="w-screen bg-text-secondary" />
 
         <div className="w-full flex flex-col xl:flex-row gap-2 xl:gap-10 justify-between">
           <p className="text-text-secondary">

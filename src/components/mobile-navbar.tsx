@@ -33,8 +33,9 @@ const MobileNavbar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm bg-brand-green text-white px-8",
-        scrolling && "bg-black/40 border-b border-black/10"
+        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm bg-brand-green text-white px-8 border-black/10",
+        scrolling &&
+          "transition duration-500 bg-black/40 border-b border-black/10"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">

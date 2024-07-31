@@ -23,8 +23,9 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 z-50 hidden md:flex h-[70px] min-h-[70px] text-sm  text-primary px-8 shadow-sm bg-brand-green",
-        scrolling && "bg-black/30 border-b border-black/10"
+        "sticky top-0 z-50 hidden md:flex h-[70px] min-h-[70px] text-sm  text-primary px-8 shadow-sm bg-brand-green border-black/10",
+        scrolling &&
+          "transition duration-500 bg-black/30 border-b border-black/10"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">

@@ -10,7 +10,7 @@ export function ProductsAccordion() {
     <Accordion type="single" collapsible className="w-full">
       {faqData.map((item, index) => (
         <AccordionItem key={item.id} value={item.id}>
-          <AccordionTrigger className="text-xl">
+          <AccordionTrigger className="text-lg md:text-xl">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="text-base">

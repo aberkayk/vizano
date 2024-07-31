@@ -1,25 +1,26 @@
 import Image from "next/image";
 import RentImage from "../../../public/images/rent.jpg";
 import { cn } from "@/lib/utils";
+import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
 const AboutUsPage = () => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
-      <div className="relative aspect-[3100/1500] w-full max-h-[600px]">
+      <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
-        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-3xl xl:text-4xl font-semibold text-center">
+        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
           RENTECH HAKKINDA
         </p>
         <Image
           src={RentImage}
           fill
           alt="About Us Image"
-          className="object-fit z-0"
+          className="object-cover object-center z-0"
         />
       </div>
 
-      <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl text-justify">
-        <div className="flex flex-col gap-8">
+      <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container text-justify">
+        <MotionDivLeft className="flex flex-col gap-8">
           <p className="text-lg font-light">
             Şirketimiz %100
             <span className="text-brand-green">Şekerbank</span> iştiraki
@@ -42,8 +43,9 @@ const AboutUsPage = () => {
             nemo cupiditate aspernatur ut, necessitatibus voluptatem eius
             atque sed iure sit quo possimus.
           </p>
-        </div>
-        <div className="flex flex-col gap-6">
+        </MotionDivLeft>
+
+        <MotionDivRight className="flex flex-col gap-6">
           <InformationLine
             title="ÜNVAN"
             description="SEKAR OTO FİLO
@@ -54,9 +56,9 @@ const AboutUsPage = () => {
             description="ZİNCİRLİKUYU"
           />
           <InformationLine title="VERGİ NO" description="7590510323" />
-        </div>
+        </MotionDivRight>
 
-        <div className="grid grid-cols-6 gap-6">
+        <MotionDivLeft className="grid grid-cols-6 gap-6">
           <InformationCard
             title="Vizyonumuz"
             description=" İhtiyaca özel hazırlanan filo hizmet paketleri ile, Türkiye
@@ -86,7 +88,7 @@ const AboutUsPage = () => {
             title="Yenilikçilik"
             description="Müşterilerimize danışmanlık yaparak ihtiyaçları doğrultusunda, onlara kazanç ve değer katacak yenilikçi çözümler geliştiririz."
           />
-        </div>
+        </MotionDivLeft>
       </div>
     </div>
   );
