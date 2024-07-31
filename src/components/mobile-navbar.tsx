@@ -62,7 +62,7 @@ const MobileNavbar = () => {
                     key={index.toString()}
                   >
                     <DialogClose className="w-full h-full flex justify-center">
-                      <p className="h-full w-56 hover:text-brand-green border-b-[1.5px] border-transparent hover:border-brand-green border-spacing-5 px-2 text-xl">
+                      <p className="h-full w-56 hover:text-brand-green  border-transparent hover:text-black hover:bg-secondary hover:scale-105 transition px-3 py-2 text-xl rounded-lg">
                         {item.label}
                       </p>
                     </DialogClose>

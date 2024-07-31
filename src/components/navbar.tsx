@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex gap-3 text-white">
           {navbarItems.map((item, index) => (
             <Link
-              className="border-b-[1.5px] border-transparent hover:border-white border-spacing-5 px-2 text-base hover:scale-105 transition"
+              className="border-transparent px-3 py-[6px] text-base rounded-lg hover:text-text hover:bg-secondary hover:scale-105 transition"
               href={item.href}
               key={index.toString()}
             >
