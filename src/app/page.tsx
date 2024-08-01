@@ -5,6 +5,8 @@ import MotionDiv, {
 } from "@/components/motion-div";
 import RentImage from "../../public/images/rent.jpg";
 import Image from "next/image";
+import { ReactNode } from "react";
+import LandingPageProductCards from "@/components/landing-page-product-cards";
 
 export default function Home() {
   return (
@@ -41,6 +43,23 @@ export default function Home() {
         <MotionDivLeft className="w-full flex justify-center">
           <LandingPageCarousel />
         </MotionDivLeft>
+
+        <MotionDivLeft className="w-full flex justify-center">
+          <p className="text-4xl md:text-5xl px-6 text-center text-brand-green">
+            RENTECH ile bütün eksiklerine sahip ol!
+          </p>
+        </MotionDivLeft>
+
+        <MotionDivRight>
+          <p className="text-center text-lg text-black/80 max-w-lg">
+            Rentech, teknolojik eşya kiralama alanında geniş bir ürün
+            yelpazesi sunar. En kaliteli ve en yeni teknoloji ekipmanları
+            uygun fiyatlarla kiralayarak hem bütçenizi koruyun hem de
+            ihtiyaçlarınızı karşılayın.
+          </p>
+        </MotionDivRight>
+
+        <LandingPageProductCards />
       </div>
     </div>
   );
