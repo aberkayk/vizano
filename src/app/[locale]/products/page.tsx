@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import AboutImage from "../../../../public/images/rent.jpg";
+import AboutImage from "../../../public/images/rent.jpg";
 import ProductsCarousel from "@/components/products-carousel";
-import MobileImage from "../../../../public/images/iphone15.webp";
-import ComputerImage from "../../../../public/images/macbook.jpeg";
-import ScreenImage from "../../../../public/images/screen.webp";
+import MobileImage from "../../../public/images/iphone15.webp";
+import ComputerImage from "../../../public/images/macbook.jpeg";
+import ScreenImage from "../../../public/images/screen.webp";
 import { ProductsAccordion } from "@/components/products-accordion";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
