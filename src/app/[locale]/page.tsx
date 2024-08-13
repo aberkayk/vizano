@@ -1,14 +1,19 @@
 import LandingPageCarousel from "@/components/landing-page-carousel";
-import MotionDiv, {
-  MotionDivLeft,
-  MotionDivRight,
-} from "@/components/motion-div";
-import RentImage from "../../public/images/rent.jpg";
+import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
+import RentImage from "../../../public/images/rent.jpg";
 import Image from "next/image";
-import { ReactNode } from "react";
-import LandingPageProductCards from "@/components/landing-page-product-cards";
 
-export default function Home() {
+import LandingPageProductCards from "@/components/landing-page-product-cards";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
+
+interface Props {
+  params: { locale: string };
+}
+
+const Home = ({ params: { locale } }: Props) => {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Index");
   return (
     <div className="w-full bg-secondary flex flex-col min-h-screen">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
@@ -63,4 +68,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
