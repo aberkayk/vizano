@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RentImage from "../../../public/images/rent.jpg";
+import RentImage from "../../../../public/images/rent.jpg";
 import { cn } from "@/lib/utils";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
