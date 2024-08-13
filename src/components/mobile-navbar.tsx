@@ -34,16 +34,13 @@ const MobileNavbar = () => {
     <div
       className={cn(
         "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm bg-brand-green text-white px-8 border-black/10",
-        scrolling && "transition duration-500 bg-black/40"
+        scrolling &&
+          "transition duration-500 bg-black/40 border-b border-black/10"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
         <div className="flex items-center justify-between w-full">
-          <Link href="/">
-            <h1 className={cn("text-2xl font-semibold text-white")}>
-              RENTECH
-            </h1>
-          </Link>
+          <h1 className="text-2xl font-semibold">RENTECH</h1>
           <Sheet>
             <SheetTrigger asChild>
               <div className="border rounded-lg flex justify-center items-center p-[1.5px]">

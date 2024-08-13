@@ -10,7 +10,7 @@ import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
 const ProductsPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden scroll-smooth">
+    <div className="w-full min-h-screen flex flex-col items-center ">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
@@ -49,7 +49,7 @@ const ProductsPage = () => {
           <ProductsCarousel data={screenData} />
         </MotionDivLeft>
 
-        <div className="w-full px-6 py-20" id="sss">
+        <div className="w-full px-6 my-8">
           <h4 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Sıkça Sorulan Sorular
           </h4>
