@@ -5,7 +5,7 @@ import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
 const AboutUsPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
+    <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">

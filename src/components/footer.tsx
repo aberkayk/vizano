@@ -64,6 +64,13 @@ const Footer = () => {
                 <p>{item.label}</p>
               </Link>
             ))}
+            <Link
+              scroll
+              className="hover:scale-105 transition text-white/70 hover:text-white"
+              href="/products#sss"
+            >
+              <p>SSS</p>
+            </Link>
           </div>
         </div>
 

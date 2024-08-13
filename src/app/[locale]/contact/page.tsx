@@ -5,10 +5,11 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
+import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
+    <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
@@ -26,29 +27,42 @@ const ContactPage = () => {
 
       <h1 className="text-4xl font-bold text-center my-24">Bize Ulaşın</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-lg max-w-3xl w-full mx-auto px-12">
-        <div className="flex flex-col gap-y-1">
+        <MotionDivLeft className="flex flex-col gap-y-1">
           <Label className="font-semibold text-base">İsim</Label>
-          <Input placeholder="Ahmet" />
-        </div>
-        <div className="flex flex-col gap-y-1">
+          <Input
+            placeholder="Ahmet"
+            className="placeholder:text-gray-400"
+          />
+        </MotionDivLeft>
+        <MotionDivRight className="flex flex-col gap-y-1">
           <Label className="font-semibold text-base">Soyisim</Label>
-          <Input placeholder="Türkmen" />
-        </div>
-        <div className="flex flex-col gap-y-1">
+          <Input
+            className="placeholder:text-gray-400"
+            placeholder="Türkmen"
+          />
+        </MotionDivRight>
+        <MotionDivLeft className="flex flex-col gap-y-1">
           <Label className="font-semibold text-base">Email</Label>
-          <Input placeholder="ahmetturkmen@mail.com" />
-        </div>
-        <div className="flex flex-col gap-y-1">
+          <Input
+            className="placeholder:text-gray-400"
+            placeholder="ahmetturkmen@mail.com"
+          />
+        </MotionDivLeft>
+        <MotionDivRight className="flex flex-col gap-y-1">
           <Label className="font-semibold text-base">Numara</Label>
-          <Input type="number" placeholder="+90 555 55 55" />
-        </div>
-        <div className="flex flex-col gap-y-1 col-span-2">
+          <Input
+            className="placeholder:text-gray-400"
+            type="number"
+            placeholder="+90 555 55 55"
+          />
+        </MotionDivRight>
+        <MotionDivLeft className="flex flex-col gap-y-1 col-span-2">
           <Label className="font-semibold text-base">Mesaj</Label>
           <Textarea
-            placeholder="Bilgi almak istiyorum"
-            className="sm:col-span-2 overflow-y-auto max-h-48 min-h-32"
+            placeholder="Ürünler hakkında almak istiyorum"
+            className="sm:col-span-2 overflow-y-auto max-h-48 min-h-32 placeholder:text-gray-40"
           />
-        </div>
+        </MotionDivLeft>
 
         <div className="sm:col-span-2 flex justify-center ">
           <Button variant="green" className="w-full min-w-32 max-w-64">
