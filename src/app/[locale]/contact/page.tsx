@@ -1,13 +1,21 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import RentImage from "../../../public/images/rent.jpg";
+import RentImage from "../../../../public/images/rent.jpg";
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-const ContactPage = () => {
+interface Props {
+  params: { locale: string };
+}
+
+const ContactPage = ({ params: { locale } }: Props) => {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("HomePage");
   return (
     <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">

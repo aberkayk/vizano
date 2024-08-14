@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { useParams, usePathname } from "next/navigation";
-import Link from "next/link";
 import { navbarItems } from "@/lib/constants";
+import LocaleSwitcher from "./locale-switcher";
+import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
-  const params = useParams();
 
   useEffect(() => {
     const listenScrollEvent = (e: any) => {
@@ -19,6 +19,8 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", listenScrollEvent);
   }, []);
+
+  const t = useTranslations("Navbar");
 
   return (
     <div
@@ -40,9 +42,10 @@ const Navbar = () => {
               href={item.href}
               key={index.toString()}
             >
-              <p>{item.label}</p>
+              <p>{t(item.label)}</p>
             </Link>
           ))}
+          <LocaleSwitcher />
         </div>
       </div>
     </div>

@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "Merhaba dünya!"
+  },
+  "Language": {
+    "turkish": "Türkçe",
+    "english": "İngilizce",
+    "deutsch": "Almanca"
+  },
+  "Navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünlerimiz",
+    "contact": "İletişim"
+  }
+}

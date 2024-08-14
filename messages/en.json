@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "Language": {
+    "turkish": "Turkish",
+    "english": "English",
+    "deutsch": "Deutsch"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact"
+  }
+}

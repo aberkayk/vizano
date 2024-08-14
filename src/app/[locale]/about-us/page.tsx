@@ -1,9 +1,17 @@
 import Image from "next/image";
-import RentImage from "../../../public/images/rent.jpg";
+import RentImage from "../../../../public/images/rent.jpg";
 import { cn } from "@/lib/utils";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-const AboutUsPage = () => {
+interface Props {
+  params: { locale: string };
+}
+
+const AboutUsPage = ({ params: { locale } }: Props) => {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("HomePage");
   return (
     <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">

@@ -1,19 +1,19 @@
 export const navbarItems = [
   {
-    label: "Ana Sayfa",
+    label: "home",
     href: "/",
   },
   {
-    label: "Hakkımızda",
+    label: "about",
     href: "/about-us",
   },
   {
-    label: "Ürünlerimiz",
+    label: "products",
     href: "/products",
   },
 
   {
-    label: "İletişim",
+    label: "contact",
     href: "/contact",
   },
 ];
