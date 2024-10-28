@@ -29,13 +29,13 @@ const Navbar = () => {
         scrolling && "transition duration-500 bg-black/30"
       )}
     >
-      <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
+      <div className="h-full w-full gap-3 text-white xl:container grid grid-cols-5 items-center">
         <Link href="/">
           <h1 className={cn("text-2xl font-semibold text-white")}>
             UFUKENERJİ
           </h1>
         </Link>
-        <div className="flex gap-3 text-white">
+        <div className="flex gap-3 text-white col-span-3 justify-center">
           {navbarItems.map((item, index) => (
             <Link
               className="border-transparent px-3 py-[6px] text-base rounded-lg hover:text-text hover:bg-secondary hover:scale-105 transition"
@@ -45,6 +45,8 @@ const Navbar = () => {
               <p>{t(item.label)}</p>
             </Link>
           ))}
+        </div>
+        <div className="flex justify-end">
           <LocaleSwitcher />
         </div>
       </div>

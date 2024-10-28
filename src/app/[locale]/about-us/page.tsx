@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RentImage from "../../../../public/images/tribun4.jpg";
+import Tribun9 from "../../../../public/images/tribun9.jpg";
 import { cn } from "@/lib/utils";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 import { unstable_setRequestLocale } from "next-intl/server";
@@ -17,10 +17,10 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
-          RENTECH HAKKINDA
+          UFUKENERJİ HAKKINDA
         </p>
         <Image
-          src={RentImage}
+          src={Tribun9}
           fill
           alt="About Us Image"
           className="object-cover object-center z-0"
@@ -28,7 +28,7 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
       </div>
 
       <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container text-justify">
-        <MotionDivLeft className="flex flex-col gap-8">
+        <MotionDivRight className="flex flex-col gap-8">
           <p className="text-lg font-light">
             Şirketimiz %100
             <span className="text-brand-green">Şekerbank</span> iştiraki
@@ -51,50 +51,35 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
             nemo cupiditate aspernatur ut, necessitatibus voluptatem eius
             atque sed iure sit quo possimus.
           </p>
-        </MotionDivLeft>
-
-        <MotionDivRight className="flex flex-col gap-6">
-          <InformationLine
-            title="ÜNVAN"
-            description="SEKAR OTO FİLO
-              YÖNETİM HİZMETLERİ VE TİCARET A.Ş."
-          />
-          <InformationLine
-            title="VERGİ DAİRESİ"
-            description="ZİNCİRLİKUYU"
-          />
-          <InformationLine title="VERGİ NO" description="7590510323" />
         </MotionDivRight>
 
         <MotionDivLeft className="grid grid-cols-6 gap-6">
           <InformationCard
             title="Vizyonumuz"
-            description=" İhtiyaca özel hazırlanan filo hizmet paketleri ile, Türkiye
-              ’nin en tercih edilen ve beğenilen filo yönetim ve kiralama
-              şirketi olmak."
+            description="Yenilenebilir enerji kaynakları alanında öncü bir güç olarak, sürdürülebilir ve çevre dostu enerji çözümleri sunarak Türkiye'nin en güvenilir enerji üretim şirketi olmak."
           />
           <InformationCard
             title="Misyonumuz"
-            description="Güçlü finansal yapısı ve kiralama süresi boyunca değişmeyen yüksek hizmet kalitesiyle, maksimum müşteri memnuniyeti önceliği ile hizmet sağlamak."
+            description="Topluma ve doğaya saygılı, yenilikçi teknolojilerle donatılmış temiz enerji üretim süreçleriyle, yüksek müşteri memnuniyeti ve enerji güvenliğine katkı sağlamak."
           />
           <InformationCard
             title="Stratejimiz"
-            description="Konusunda uzman kadrosu ile verdiği danışmanlık hizmeti ve müşterilerine beklentilerin üzerinde sunduğu hizmet kalitesi ile filo kiralama sektöründe yenilikçi, öncü ve aranılır olmak."
+            description="Uzman kadromuz ve ileri teknolojilerimizle, rüzgar enerjisi gibi yenilenebilir kaynaklardan maksimum verimlilikle enerji üreterek sektörde yenilikçi ve sürdürülebilir çözümler sunmak."
           />
           <InformationCard
             className="lg:col-span-6"
             title="Değerlerimiz"
-            description="Müşterimizin ihtiyaçlarını doğru şekilde belirler, müşteri sadakati önceliğimiz ile firmaya özel yenilikçi koşullar için hizmet ve ürünler geliştiririz. Tüm ilişkilerimizde güven, saygı ve şeffaflık esastır. Bilgi ve ürünlerimizin ulaşılabilir olmasına özen gösteririz. Yaşadığımız çevreye ve sosyal sorumluluk projelerine duyarlı ve yakınızdır."
+            description="Müşterilerimizin enerji ihtiyaçlarını doğru analiz eder, çevreye duyarlı çözümler sunarız. Güven, şeffaflık ve sorumluluk ilkeleriyle ilişkilerimizi inşa ederiz. Enerjiye erişimi sağlarken sosyal sorumluluk projelerine katkıda bulunur ve sürdürülebilirliği ön planda tutarız."
           />
           <InformationCard
             className="lg:col-span-3"
             title="Kalite"
-            description="Hizmetlerimizde yenilikçi ve çözüm odaklılık esası ile hedefimiz, her zaman yüksek kalite sunmaktır."
+            description="Yenilenebilir enerji üretiminde sürekli gelişim ve yeniliklerle, topluma en yüksek kalite ve verimlilikte enerji sunmayı hedefleriz."
           />
           <InformationCard
             className="lg:col-span-3"
             title="Yenilikçilik"
-            description="Müşterilerimize danışmanlık yaparak ihtiyaçları doğrultusunda, onlara kazanç ve değer katacak yenilikçi çözümler geliştiririz."
+            description="Müşterilerimizin enerji ihtiyaçlarına uygun, sürdürülebilir ve çevre dostu yenilikçi çözümler geliştirerek enerji sektöründe fark yaratırız."
           />
         </MotionDivLeft>
       </div>

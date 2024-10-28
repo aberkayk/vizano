@@ -61,7 +61,7 @@ const ContactPage = ({ params: { locale } }: Props) => {
           <Input
             className="placeholder:text-gray-400"
             type="number"
-            placeholder="+90 555 55 55"
+            placeholder="+90 532 332 32 32"
           />
         </MotionDivRight>
         <MotionDivLeft className="flex flex-col gap-y-1 col-span-2">
@@ -78,21 +78,18 @@ const ContactPage = ({ params: { locale } }: Props) => {
           </Button>
         </div>
       </div>
-      <address className="flex flex-col items-center justify-center text-center gap-6 w-full py-24">
+      <address className="flex flex-col items-center justify-center gap-4 text-center w-full py-24">
         {/* Address */}
         <div className="text-lg leading-8 text-muted-foreground">
-          <p className="text-xl">
-            RENTECH TEKNOLOJİK EKİPMAN KİRALAMA A.Ş.
-          </p>
           <p>
-            Metrocity İş Merkezi <br /> A Blok Kat:12 Şişli / İSTANBUL
+            Soğucak Mah. Soğucak Sokak NO:77 <br /> Mustafakemalpaşa/BURSA
           </p>
         </div>
         {/* Contact */}
         <div className="flex flex-col text-base text-muted-foreground">
-          <p>T: +90 212 222 22 22</p>
-          <p>F: +90 212 222 22 22</p>
-          <p>info@rentech.com</p>
+          <p>T: +90 (266) 597 10 52</p>
+          <p>F: +90 (266) 597 10 36</p>
+          <p>ufukenerji@guclugrup.com</p>
         </div>
       </address>
     </div>

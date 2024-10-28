@@ -7,10 +7,6 @@ export const navbarItems = [
     label: "about",
     href: "/about-us",
   },
-  {
-    label: "products",
-    href: "/products",
-  },
 
   {
     label: "contact",

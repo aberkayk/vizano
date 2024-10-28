@@ -12,6 +12,10 @@ import ThirdImage from "../../public/images/tribun3.jpg";
 import FourthImage from "../../public/images/tribun4.jpg";
 import FifthImage from "../../public/images/tribun5.jpg";
 import SixthImage from "../../public/images/tribun6.jpg";
+import SeventhImage from "../../public/images/tribun7.jpg";
+import EighthImage from "../../public/images/tribun8.jpg";
+import NinthImage from "../../public/images/tribun9.jpg";
+import TenthImage from "../../public/images/tribun10.jpg";
 
 const data = [
   {
@@ -38,6 +42,22 @@ const data = [
     label: "SixthImage",
     img: SixthImage,
   },
+  {
+    label: "SeventhImage",
+    img: SeventhImage,
+  },
+  {
+    label: "EighthImage",
+    img: EighthImage,
+  },
+  {
+    label: "NinthImage",
+    img: NinthImage,
+  },
+  {
+    label: "TenthImage",
+    img: TenthImage,
+  },
 ];
 
 const LandingPageCarousel = () => {
@@ -46,10 +66,10 @@ const LandingPageCarousel = () => {
       <CarouselContent className="flex h-full">
         {data.map((item, index) => (
           <CarouselItem
-            className="h-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 ml-4 flex justify-center"
+            className="h-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 ml-4 flex justify-center"
             key={index}
           >
-            <div className="relative h-64 w-fit min-w-64  ">
+            <div className="relative h-64 w-fit min-w-56">
               <Image
                 priority
                 className="object-center rounded-lg "
