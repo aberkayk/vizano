@@ -34,16 +34,12 @@ export default function LocaleSwitcher() {
   const onSelectChange = (locale: string) => {
     const path = redirectedPathName(locale, pathname);
     router.push(path, { scroll: false });
-    // setLocale(locale);
-    // startTransition(() => {
-    //   router.replace(`/${locale}`);
-    // });
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size="sm" variant="outline" className="bg-brand-green">
+        <Button size="sm" variant="ghost">
           <span className="uppercase text-xs">{locale}</span>
           <span className="sr-only">Change Language</span>
         </Button>

@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
         <Link href="/">
           <h1 className={cn("text-2xl font-semibold text-white")}>
-            RENTECH
+            UFUKENERJİ
           </h1>
         </Link>
         <div className="flex gap-3 text-white">

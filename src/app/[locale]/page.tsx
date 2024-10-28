@@ -1,6 +1,6 @@
 import LandingPageCarousel from "@/components/landing-page-carousel";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
-import RentImage from "../../../public/images/rent.jpg";
+import RentImage from "../../../public/images/tribun4.jpg";
 import Image from "next/image";
 import LandingPageProductCards from "@/components/landing-page-product-cards";
 import { useTranslations } from "next-intl";

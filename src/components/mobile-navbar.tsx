@@ -42,7 +42,7 @@ const MobileNavbar = () => {
         <div className="flex items-center justify-between w-full">
           <Link href="/">
             <h1 className={cn("text-2xl font-semibold text-white")}>
-              RENTECH
+              UFUKENERJİ
             </h1>
           </Link>
           <div className="flex gap-2">
@@ -84,7 +84,7 @@ const MobileNavbar = () => {
                       href="/"
                       className="text-2xl font-semibold hover:scale-105 w-full transition text-white"
                     >
-                      RENTECH
+                      UFUKENERJİ
                     </Link>
                   </DialogClose>
                 </div>
