@@ -6,9 +6,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import SecondImage from "../../public/images/tribun2.jpg";
-import FirstImage from "../../public/images/tribun1.jpg";
-import ThirdImage from "../../public/images/tribun3.jpg";
 import FourthImage from "../../public/images/tribun4.jpg";
 import FifthImage from "../../public/images/tribun5.jpg";
 import SixthImage from "../../public/images/tribun6.jpg";
@@ -16,18 +13,21 @@ import SeventhImage from "../../public/images/tribun7.jpg";
 import EighthImage from "../../public/images/tribun8.jpg";
 import NinthImage from "../../public/images/tribun9.jpg";
 import TenthImage from "../../public/images/tribun10.jpg";
+import FirstImage from "../../public/images/tribun1.jpg";
+import SecondImage from "../../public/images/tribun2.jpg";
+import ThirdImage from "../../public/images/tribun3.jpg";
 
 const data = [
   {
-    label: "FirstImage",
+    label: "FourthImage",
     img: FirstImage,
   },
   {
-    label: "SecondImage",
+    label: "FourthImage",
     img: SecondImage,
   },
   {
-    label: "ThirdImage",
+    label: "FourthImage",
     img: ThirdImage,
   },
   {
@@ -66,10 +66,10 @@ const LandingPageCarousel = () => {
       <CarouselContent className="flex h-full">
         {data.map((item, index) => (
           <CarouselItem
-            className="h-full sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 ml-4 flex justify-center"
+            className="h-full sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
             key={index}
           >
-            <div className="relative h-96 w-fit min-w-80">
+            <div className="relative h-96 w-[90%] min-w-80">
               <Image
                 priority
                 className="rounded-lg "
