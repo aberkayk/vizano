@@ -1,7 +1,7 @@
 export const navbarItems = [
   {
     label: "home",
-    href: "/",
+    href: "/home",
   },
   {
     label: "about",

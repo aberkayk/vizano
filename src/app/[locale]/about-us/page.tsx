@@ -17,7 +17,7 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
         <div className="h-full w-full absolute z-10 bg-black opacity-50" />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-20 text-4xl xl:text-5xl font-semibold text-center">
-          UFUKENERJİ HAKKINDA
+          HAKKIMIZDA
         </p>
         <Image
           src={Tribun9}
@@ -30,10 +30,9 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
       <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container text-justify">
         <MotionDivRight className="flex flex-col gap-8">
           <p className="text-lg font-light">
-            Şirketimiz %100
-            <span className="text-brand-green">Şekerbank</span> iştiraki
-            olup, finansal markanın gücü, tecrübe ve bilgisi ile, teknoloji
-            ve finans sektörlerini bir araya getirmiştir.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur voluptatem tempore molestias, fuga voluptas nobis
+            vero natus laborum magni quibusdam?
           </p>
           <p className="text-lg font-light">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -117,11 +116,11 @@ const InformationCard = ({
   return (
     <div
       className={cn(
-        "flex flex-col gap-3 py-6 px-5 border rounded-lg drop-shadow-sm col-span-6 md:col-span-3 lg:col-span-2",
+        "flex flex-col gap-3 py-6 px-5 border border-brand-green rounded-lg drop-shadow-sm col-span-6 md:col-span-3 lg:col-span-2",
         className
       )}
     >
-      <p className="text-xl font-semibold">{title}</p>
+      <p className="text-xl font-semibold text-brand-green">{title}</p>
       <p className="text-lg font-light">{description}</p>
     </div>
   );

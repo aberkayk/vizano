@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import RentImage from "../../../../public/images/tribun4.jpg";
+import Tribun8 from "../../../../public/images/tribun8.jpg";
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
@@ -24,7 +24,7 @@ const ContactPage = ({ params: { locale } }: Props) => {
           İLETİŞİM
         </p>
         <Image
-          src={RentImage}
+          src={Tribun8}
           fill
           alt="About Us Image"
           className="object-cover object-center z-0"

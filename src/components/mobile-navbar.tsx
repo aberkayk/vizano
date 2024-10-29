@@ -14,6 +14,9 @@ import { cn } from "@/lib/utils";
 import { Link } from "@/navigation";
 import LocaleSwitcher from "./locale-switcher";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Logo from "../../public/logo.png";
+import { usePathname } from "next/navigation";
 
 const MobileNavbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -30,6 +33,7 @@ const MobileNavbar = () => {
   }, []);
 
   const t = useTranslations("Navbar");
+  const pathname = usePathname();
 
   return (
     <div
@@ -40,10 +44,10 @@ const MobileNavbar = () => {
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
         <div className="flex items-center justify-between w-full">
-          <Link href="/">
-            <h1 className={cn("text-2xl font-semibold text-white")}>
-              UFUKENERJİ
-            </h1>
+          <Link href="/home">
+            <div className="relative w-48">
+              <Image src={Logo} alt={"Logo"} />
+            </div>
           </Link>
           <div className="flex gap-2">
             <LocaleSwitcher />
@@ -68,8 +72,14 @@ const MobileNavbar = () => {
                       key={index.toString()}
                     >
                       <DialogClose className="w-fit h-full flex justify-center">
-                        <p className="h-full w-64 hover:text-white  border-transparent bg-secondary hover:bg-brand-green hover:scale-105 transition px-3 py-2 text-xl rounded-lg">
-                          <p>{t(item.label)}</p>
+                        <p
+                          className={cn(
+                            "h-full w-64 transition px-3 py-2 text-xl hover:border-b border-spacing-4 border-brand-green hover:text-brand-green",
+                            pathname.includes(item.href) &&
+                              "text-brand-green border-b border-spacing-4 border-brand-green"
+                          )}
+                        >
+                          {t(item.label)}
                         </p>
                       </DialogClose>
                     </Link>
@@ -80,11 +90,10 @@ const MobileNavbar = () => {
                     asChild
                     className="w-full flex justify-center"
                   >
-                    <Link
-                      href="/"
-                      className="text-2xl font-semibold hover:scale-105 w-full transition text-white"
-                    >
-                      UFUKENERJİ
+                    <Link href="/home">
+                      <div className="relative w-48">
+                        <Image src={Logo} alt={"Logo"} />
+                      </div>
                     </Link>
                   </DialogClose>
                 </div>
