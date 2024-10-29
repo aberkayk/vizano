@@ -13,23 +13,8 @@ import SeventhImage from "../../public/images/tribun7.jpg";
 import EighthImage from "../../public/images/tribun8.jpg";
 import NinthImage from "../../public/images/tribun9.jpg";
 import TenthImage from "../../public/images/tribun10.jpg";
-import FirstImage from "../../public/images/tribun1.jpg";
-import SecondImage from "../../public/images/tribun2.jpg";
-import ThirdImage from "../../public/images/tribun3.jpg";
 
 const data = [
-  {
-    label: "FourthImage",
-    img: FirstImage,
-  },
-  {
-    label: "FourthImage",
-    img: SecondImage,
-  },
-  {
-    label: "FourthImage",
-    img: ThirdImage,
-  },
   {
     label: "FourthImage",
     img: FourthImage,
