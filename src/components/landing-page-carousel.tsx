@@ -6,8 +6,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import FirstImage from "../../public/images/tribun1.jpg";
 import SecondImage from "../../public/images/tribun2.jpg";
+import FirstImage from "../../public/images/tribun1.jpg";
 import ThirdImage from "../../public/images/tribun3.jpg";
 import FourthImage from "../../public/images/tribun4.jpg";
 import FifthImage from "../../public/images/tribun5.jpg";
