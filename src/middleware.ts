@@ -18,8 +18,8 @@ export const config = {
     // all requests that have a locale prefix
     "/(tr|en)/:path*",
 
-    // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
-    "/((?!_next|_vercel|.*\\..*).*)",
+    // Locale eklemek için eksik yönlendirmeleri etkinleştir
+    // (ör. `/pathnames` -> `/en/pathnames`)
+    "/((?!api|_next|_vercel|.\\..|favicon.ico).*)",
   ],
 };
