@@ -19,8 +19,29 @@
     "send": "Send"
   },
   "HomePage": {
-    "first-paragraph": "Established by Ufuk Enerji Elektrik Üretim A.Ş in 2015 in the districts of Kepsut and Susurluk in Balıkesir, the Poyrazgölü Wind Power Plant is an energy production facility aimed at enhancing Turkey's energy supply security while prioritizing environmental sustainability. With an installed capacity of 48.5 MWe and 21 wind turbines, Poyrazgölü WPP stands as a significant project in the renewable energy sector, playing a crucial role in meeting our nation's demand for clean energy.",
-
-    "second-paragraph": "Equipped with a total of 17 x 2.3 MW and 4 x 2.35 MW state-of-the-art turbines, the Poyrazgölü Wind Power Plant has an annual energy production capacity sufficient to meet the energy needs of hundreds of thousands of households. By generating electricity from renewable sources, our plant contributes to reducing carbon emissions and represents a critical step toward achieving our sustainable energy goals."
+    "first-paragraph": "Established in 2015 by Ufuk Enerji Elektrik Üretim A.Ş in the districts of Kepsut and Susurluk in Balıkesir, the Poyrazgölü Wind Power Plant is an energy production facility that aims to contribute to Turkey's energy supply security while prioritizing environmental sustainability. With an installed capacity of 48.5 MWe and 21 wind turbines, Poyrazgölü WPP is a significant project in renewable energy and plays a key role in meeting our country’s clean energy needs.",
+    "second-paragraph": "Equipped with a total of 17 x 2.3 MW and 4 x 2.35 MW modern turbines, the Poyrazgölü Wind Power Plant has an annual energy production capacity that can meet the energy needs of hundreds of thousands of households. By generating electricity from renewable energy sources, our plant helps reduce carbon emissions and represents an important step toward achieving our sustainable energy goals.",
+    "card1-title": "Environmentally Friendly Energy Production",
+    "card1-description": "Wind energy is a zero-emission energy source. It provides environmentally friendly energy production by reducing carbon emissions and contributes to a sustainable future.",
+    "card2-title": "Economic Benefits",
+    "card2-description": "Renewable wind energy reduces costs in the long run and decreases dependency on energy imports, offering an economical energy solution for countries.",
+    "card3-title": "High Efficiency",
+    "card3-description": "Modern wind turbines operate with high efficiency, generating energy even at low wind speeds, thereby maximizing energy production potential.",
+    "card4-title": "Renewable Resource Utilization",
+    "card4-description": "Wind is an unlimited and renewable energy source. It contributes to sustainable energy production by preserving natural resources."
+  },
+  "AboutUsPage": {
+    "card1-title": "Our Vision",
+    "card1-description": "To become Turkey's most reliable energy production company by leading in the field of renewable energy sources, offering sustainable and environmentally friendly energy solutions.",
+    "card2-title": "Our Mission",
+    "card2-description": "To contribute to energy security and customer satisfaction through clean energy production processes equipped with innovative technologies that respect both society and nature.",
+    "card3-title": "Our Strategy",
+    "card3-description": "To offer innovative and sustainable solutions in the industry by generating energy with maximum efficiency from renewable sources like wind energy, supported by our expert team and advanced technologies.",
+    "card4-title": "Our Values",
+    "card4-description": "We analyze our customers' energy needs accurately and provide environmentally conscious solutions. We build our relationships on the principles of trust, transparency, and responsibility, contributing to social responsibility projects and prioritizing sustainability while ensuring access to energy.",
+    "card5-title": "Quality",
+    "card5-description": "In renewable energy production, we aim to offer society the highest quality and efficiency in energy through continuous improvement and innovation.",
+    "card6-title": "Innovation",
+    "card6-description": "We make a difference in the energy sector by developing innovative solutions that are sustainable and environmentally friendly, meeting the energy needs of our customers."
   }
 }

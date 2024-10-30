@@ -20,7 +20,28 @@
   },
   "HomePage": {
     "first-paragraph": "Ufuk Enerji Elektrik Üretim A.Ş tarafından 2015 yılında Balıkesir’in Kepsut ve Susurluk ilçelerinde kurulan Poyrazgölü Rüzgar Enerji Santrali, Türkiye’nin enerji arz güvenliğine katkıda bulunmayı hedefleyen ve çevresel sürdürülebilirliği ön planda tutan bir enerji üretim tesisidir. 48,5 MWe kurulu gücü ve 21 rüzgar türbini ile Poyrazgölü RES, yenilenebilir enerji alanında önemli bir projedir ve ülkemizin temiz enerji ihtiyacını karşılamada kilit bir rol üstlenmektedir.",
-
-    "second-paragraph": "Toplamda 17 x 2,3 MW ve 4 x 2,35 MW gücündeki modern türbinleri ile donatılan Poyrazgölü Rüzgar Enerji Santrali, yıllık enerji üretim kapasitesi ile yüzbinlerce hanenin enerji ihtiyacını karşılayabilecek düzeydedir. Yenilenebilir enerji kaynaklarından ürettiği elektrikle, karbon emisyonlarının azaltılmasına yardımcı olan santralimiz, sürdürülebilir enerji hedeflerimize ulaşmada önemli bir adımı temsil etmektedir."
+    "second-paragraph": "Toplamda 17 x 2,3 MW ve 4 x 2,35 MW gücündeki modern türbinleri ile donatılan Poyrazgölü Rüzgar Enerji Santrali, yıllık enerji üretim kapasitesi ile yüzbinlerce hanenin enerji ihtiyacını karşılayabilecek düzeydedir. Yenilenebilir enerji kaynaklarından ürettiği elektrikle, karbon emisyonlarının azaltılmasına yardımcı olan santralimiz, sürdürülebilir enerji hedeflerimize ulaşmada önemli bir adımı temsil etmektedir.",
+    "card1-title": "Çevre Dostu Enerji Üretimi",
+    "card1-description": "Rüzgar enerjisi, sıfır emisyonlu bir enerji kaynağıdır. Karbon salınımını azaltarak çevre dostu bir enerji üretimi sağlar ve sürdürülebilir bir gelecek için katkıda bulunur.",
+    "card2-title": "Ekonomik Avantajlar",
+    "card2-description": "Yenilenebilir rüzgar enerjisi, uzun vadede maliyetleri düşürür ve enerji ithalatına olan bağımlılığı azaltır. Ülkeler için ekonomik bir enerji çözümü sunar.",
+    "card3-title": "Yüksek Verimlilik",
+    "card3-description": "Modern rüzgar türbinleri, yüksek verimlilikle çalışarak düşük rüzgar hızlarında bile enerji üretebilir. Böylece enerji üretim potansiyelini maksimize eder.",
+    "card4-title": "Yenilenebilir Kaynak Kullanımı",
+    "card4-description": "Rüzgar, sınırsız ve yenilenebilir bir enerji kaynağıdır. Doğal kaynakları koruyarak sürdürülebilir enerji üretimine katkıda bulunur."
+  },
+  "AboutUsPage": {
+    "card1-title": "Vizyonumuz",
+    "card1-description": "Yenilenebilir enerji kaynakları alanında öncü bir güç olarak, sürdürülebilir ve çevre dostu enerji çözümleri sunarak Türkiye'nin en güvenilir enerji üretim şirketi olmak.",
+    "card2-title": "Misyonumuz",
+    "card2-description": "Topluma ve doğaya saygılı, yenilikçi teknolojilerle donatılmış temiz enerji üretim süreçleriyle, yüksek müşteri memnuniyeti ve enerji güvenliğine katkı sağlamak.",
+    "card3-title": "Stratejimiz",
+    "card3-description": "Uzman kadromuz ve ileri teknolojilerimizle, rüzgar enerjisi gibi yenilenebilir kaynaklardan maksimum verimlilikle enerji üreterek sektörde yenilikçi ve sürdürülebilir çözümler sunmak.",
+    "card4-title": "Değerlerimiz",
+    "card4-description": "Müşterilerimizin enerji ihtiyaçlarını doğru analiz eder, çevreye duyarlı çözümler sunarız. Güven, şeffaflık ve sorumluluk ilkeleriyle ilişkilerimizi inşa ederiz. Enerjiye erişimi sağlarken sosyal sorumluluk projelerine katkıda bulunur ve sürdürülebilirliği ön planda tutarız.",
+    "card5-title": "Kalite",
+    "card5-description": "Yenilenebilir enerji üretiminde sürekli gelişim ve yeniliklerle, topluma en yüksek kalite ve verimlilikte enerji sunmayı hedefleriz.",
+    "card6-title": "Yenilikçilik",
+    "card6-description": "Müşterilerimizin enerji ihtiyaçlarına uygun, sürdürülebilir ve çevre dostu yenilikçi çözümler geliştirerek enerji sektöründe fark yaratırız."
   }
 }

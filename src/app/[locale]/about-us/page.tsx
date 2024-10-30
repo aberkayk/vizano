@@ -2,15 +2,19 @@ import Image from "next/image";
 import Tribun9 from "../../../../public/images/tribun9.jpg";
 import { cn } from "@/lib/utils";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {
+  getTranslations,
+  unstable_setRequestLocale,
+} from "next-intl/server";
 import { useTranslations } from "next-intl";
 
 interface Props {
   params: { locale: string };
 }
 
-const AboutUsPage = ({ params: { locale } }: Props) => {
+const AboutUsPage = async ({ params: { locale } }: Props) => {
   unstable_setRequestLocale(locale);
+  const t = await getTranslations("AboutUsPage");
   return (
     <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <div className="relative aspect-[3100/1500] w-full max-h-[500px]">
@@ -53,31 +57,31 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
 
         <div className="grid lg:grid-cols-6 gap-6">
           <InformationCard
-            title="Vizyonumuz"
-            description="Yenilenebilir enerji kaynakları alanında öncü bir güç olarak, sürdürülebilir ve çevre dostu enerji çözümleri sunarak Türkiye'nin en güvenilir enerji üretim şirketi olmak."
+            title={t("card1-title")}
+            description={t("card1-description")}
           />
           <InformationCard
-            title="Misyonumuz"
-            description="Topluma ve doğaya saygılı, yenilikçi teknolojilerle donatılmış temiz enerji üretim süreçleriyle, yüksek müşteri memnuniyeti ve enerji güvenliğine katkı sağlamak."
+            title={t("card2-title")}
+            description={t("card2-description")}
           />
           <InformationCard
-            title="Stratejimiz"
-            description="Uzman kadromuz ve ileri teknolojilerimizle, rüzgar enerjisi gibi yenilenebilir kaynaklardan maksimum verimlilikle enerji üreterek sektörde yenilikçi ve sürdürülebilir çözümler sunmak."
+            title={t("card3-title")}
+            description={t("card3-description")}
           />
           <InformationCard
             className="lg:col-span-6"
-            title="Değerlerimiz"
-            description="Müşterilerimizin enerji ihtiyaçlarını doğru analiz eder, çevreye duyarlı çözümler sunarız. Güven, şeffaflık ve sorumluluk ilkeleriyle ilişkilerimizi inşa ederiz. Enerjiye erişimi sağlarken sosyal sorumluluk projelerine katkıda bulunur ve sürdürülebilirliği ön planda tutarız."
+            title={t("card4-title")}
+            description={t("card4-description")}
           />
           <InformationCard
             className="lg:col-span-3"
-            title="Kalite"
-            description="Yenilenebilir enerji üretiminde sürekli gelişim ve yeniliklerle, topluma en yüksek kalite ve verimlilikte enerji sunmayı hedefleriz."
+            title={t("card5-title")}
+            description={t("card5-description")}
           />
           <InformationCard
             className="lg:col-span-3"
-            title="Yenilikçilik"
-            description="Müşterilerimizin enerji ihtiyaçlarına uygun, sürdürülebilir ve çevre dostu yenilikçi çözümler geliştirerek enerji sektöründe fark yaratırız."
+            title={t("card6-title")}
+            description={t("card6-description")}
           />
         </div>
       </div>
@@ -86,22 +90,6 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
 };
 
 export default AboutUsPage;
-
-const InformationLine = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
-  return (
-    <p>
-      <span className="font-bold w-36 inline-block">{title}</span>
-      <span className="inline-block w-4">:</span>
-      {description}
-    </p>
-  );
-};
 
 const InformationCard = ({
   title,

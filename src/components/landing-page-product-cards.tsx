@@ -7,8 +7,53 @@ import {
   Wind,
 } from "lucide-react";
 import { MotionDivLeft, MotionDivRight } from "./motion-div";
+import { useTranslations } from "next-intl";
 
 const LandingPageProductCards = () => {
+  const t = useTranslations("HomePage");
+  const products = [
+    {
+      title: t("card1-title"),
+      icon: (
+        <Wind
+          className="text-black/70 group-hover:text-white transition"
+          size={50}
+        />
+      ),
+      description: t("card1-description"),
+    },
+    {
+      title: t("card2-title"),
+      icon: (
+        <DollarSign
+          className="text-black/70 group-hover:text-white transition"
+          size={50}
+        />
+      ),
+      description: t("card2-description"),
+    },
+    {
+      title: t("card3-title"),
+      icon: (
+        <LampDesk
+          className="text-black/70 group-hover:text-white transition"
+          size={50}
+        />
+      ),
+      description: t("card3-description"),
+    },
+    {
+      title: t("card4-title"),
+      icon: (
+        <UtilityPole
+          className="text-black/70 group-hover:text-white transition"
+          size={50}
+        />
+      ),
+      description: t("card4-description"),
+    },
+  ];
+
   return (
     <div className="grid md:grid-cols-2  gap-8">
       {products.map((product, index) => {
@@ -57,50 +102,3 @@ const ProductVariantCard = ({
     </div>
   );
 };
-
-const products = [
-  {
-    title: "Çevre Dostu Enerji Üretimi",
-    icon: (
-      <Wind
-        className="text-black/70 group-hover:text-white transition"
-        size={50}
-      />
-    ),
-    description:
-      "Rüzgar enerjisi, sıfır emisyonlu bir enerji kaynağıdır. Karbon salınımını azaltarak çevre dostu bir enerji üretimi sağlar ve sürdürülebilir bir gelecek için katkıda bulunur.",
-  },
-  {
-    title: "Ekonomik Avantajlar",
-    icon: (
-      <DollarSign
-        className="text-black/70 group-hover:text-white transition"
-        size={50}
-      />
-    ),
-    description:
-      "Yenilenebilir rüzgar enerjisi, uzun vadede maliyetleri düşürür ve enerji ithalatına olan bağımlılığı azaltır. Ülkeler için ekonomik bir enerji çözümü sunar.",
-  },
-  {
-    title: "Yüksek Verimlilik",
-    icon: (
-      <LampDesk
-        className="text-black/70 group-hover:text-white transition"
-        size={50}
-      />
-    ),
-    description:
-      "Modern rüzgar türbinleri, yüksek verimlilikle çalışarak düşük rüzgar hızlarında bile enerji üretebilir. Böylece enerji üretim potansiyelini maksimize eder.",
-  },
-  {
-    title: "Yenilenebilir Kaynak Kullanımı",
-    icon: (
-      <UtilityPole
-        className="text-black/70 group-hover:text-white transition"
-        size={50}
-      />
-    ),
-    description:
-      "Rüzgar, sınırsız ve yenilenebilir bir enerji kaynağıdır. Doğal kaynakları koruyarak sürdürülebilir enerji üretimine katkıda bulunur.",
-  },
-];
