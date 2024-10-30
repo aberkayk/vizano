@@ -51,10 +51,10 @@ const LandingPageCarousel = () => {
       <CarouselContent className="flex h-full">
         {data.map((item, index) => (
           <CarouselItem
-            className="h-full sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
+            className="h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
             key={index}
           >
-            <div className="relative h-96 w-[90%] min-w-80">
+            <div className="relative h-96 w-[90%] max-w-64 min-w-80">
               <Image
                 priority
                 className="rounded-lg "
@@ -62,7 +62,7 @@ const LandingPageCarousel = () => {
                 fill
                 src={item.img}
                 alt={item.label}
-                objectFit="center"
+                objectFit="cover"
               />
             </div>
           </CarouselItem>

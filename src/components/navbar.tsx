@@ -16,14 +16,22 @@ const Navbar = () => {
   console.log({ pathname });
 
   useEffect(() => {
-    const listenScrollEvent = (e: any) => {
+    const listenScrollEvent = () => {
       if (window.scrollY > 70) {
         setScrolling(true);
       } else {
         setScrolling(false);
       }
     };
+
+    // Check scroll position on initial load
+    listenScrollEvent();
+
     window.addEventListener("scroll", listenScrollEvent);
+
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
   }, []);
 
   const t = useTranslations("Navbar");
@@ -41,7 +49,7 @@ const Navbar = () => {
             <Image src={Logo} alt={"Logo"} />
           </div>
         </Link>
-        <div className="flex gap-3 col-span-3 justify-center">
+        <div className="flex gap-3 col-span-3 justify-center font-semibold">
           {navbarItems.map((item, index) => (
             <Link
               className={cn(

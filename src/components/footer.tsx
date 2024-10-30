@@ -6,8 +6,11 @@ import Link from "next/link";
 import React from "react";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Navbar");
+
   return (
     <div className="w-full bg-brand-green">
       <div className="w-full xl:container flex gap-8 flex-col py-12 px-8">
@@ -26,14 +29,14 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-1/2 lg:w-1/3 lg:max-w-56">
             <h5 className="text-2xl">İletişim</h5>
             <p className="flex gap-4 font-light text-white/70">
-              <Mail />
+              <Mail className="shrink-0" />
               ufukenerji@guclugrup.com
             </p>
             <p className="flex gap-4 font-light text-white/70">
-              <Phone />0 (266) 597 10 52
+              <Phone className="shrink-0" />0 (266) 597 10 52
             </p>
             <p className="flex gap-4 font-light text-white/70">
-              <Printer />0 (266) 597 10 36
+              <Printer className="shrink-0" />0 (266) 597 10 36
             </p>
             <p className="flex gap-4 font-light text-white/70">
               <MapPin className="shrink-0" />
@@ -55,11 +58,11 @@ const Footer = () => {
 
             {navbarItems.map((item, index) => (
               <Link
-                className="hover:scale-105 transition text-white/70 hover:text-white capitalize"
+                className=" transition text-white/70 hover:text-white capitalize"
                 href={item.href}
                 key={index.toString()}
               >
-                <p>{item.label}</p>
+                <p>{t(item.label)}</p>
               </Link>
             ))}
           </div>

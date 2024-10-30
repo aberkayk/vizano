@@ -9,7 +9,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navbarItems } from "@/lib/constants";
-import { DialogClose } from "@radix-ui/react-dialog";
 import { cn } from "@/lib/utils";
 import { Link } from "@/navigation";
 import LocaleSwitcher from "./locale-switcher";
@@ -38,8 +37,8 @@ const MobileNavbar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm bg-brand-green text-white px-8 border-black/10",
-        scrolling && "transition duration-500 bg-black/40"
+        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-8 border-black/10",
+        scrolling && "transition bg-black/70 text-white"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
@@ -71,7 +70,7 @@ const MobileNavbar = () => {
                       href={item.href}
                       key={index.toString()}
                     >
-                      <DialogClose className="w-fit h-full flex justify-center">
+                      <SheetClose className="w-fit h-full flex justify-center">
                         <p
                           className={cn(
                             "h-full w-64 transition px-3 py-2 text-xl hover:border-b border-spacing-4 border-brand-green hover:text-brand-green",
@@ -81,12 +80,12 @@ const MobileNavbar = () => {
                         >
                           {t(item.label)}
                         </p>
-                      </DialogClose>
+                      </SheetClose>
                     </Link>
                   ))}
                 </div>
                 <div className="w-full bg-brand-green h-20 flex justify-center items-center">
-                  <DialogClose
+                  <SheetClose
                     asChild
                     className="w-full flex justify-center"
                   >
@@ -95,7 +94,7 @@ const MobileNavbar = () => {
                         <Image src={Logo} alt={"Logo"} />
                       </div>
                     </Link>
-                  </DialogClose>
+                  </SheetClose>
                 </div>
               </SheetContent>
             </Sheet>

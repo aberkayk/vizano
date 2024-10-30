@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Merhaba dünya!"
-  },
   "Language": {
     "turkish": "Türkçe",
     "english": "İngilizce",
@@ -12,5 +9,17 @@
     "about": "Hakkımızda",
     "products": "Ürünlerimiz",
     "contact": "İletişim"
+  },
+  "ContactForm": {
+    "name": "İsim",
+    "surname": "Soyisim",
+    "email": "Email",
+    "message": "Mesaj",
+    "number": "İletişim Numarası",
+    "send": "Gönder"
+  },
+  "HomePage": {
+    "first-paragraph": "Ufuk Enerji Elektrik Üretim A.Ş tarafından 2015 yılında Balıkesir’in Kepsut ve Susurluk ilçelerinde kurulan Poyrazgölü Rüzgar Enerji Santrali, toplam 48,5 MWe kurulu güce ve 21 rüzgar türbinine sahiptir.",
+    "second-paragraph": "Toplam 17 x 2,3 ve 4 x 2,35 MW gücündeki türbinleriyle Poyrazgölü Rüzgar Enerji Santrali, yenilenebilir enerji kaynaklarından faydalanarak sürdürülebilir enerji üretimine katkı sağlıyor."
   }
 }
