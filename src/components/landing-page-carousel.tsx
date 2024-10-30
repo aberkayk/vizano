@@ -54,7 +54,7 @@ const LandingPageCarousel = () => {
             className="h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
             key={index}
           >
-            <div className="relative h-96 w-[90%] max-w-64 min-w-80">
+            <div className="relative h-96 w-[90%] max-w-64">
               <Image
                 priority
                 className="rounded-lg "

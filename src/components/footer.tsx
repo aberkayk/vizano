@@ -20,14 +20,14 @@ const Footer = () => {
             UFUK ENERJİ ELEKTRİK <br /> ÜRETİM A.Ş.
           </h1>
         </div> */}
-        <div className="flex lg:hidden relative max-w-96 self-center">
+        <div className="flex lg:hidden relative max-w-64 self-center">
           <Image src={LogoWhite} alt={"Logo"} />
         </div>
         {/* Bottom Contact and Links */}
         <div className="w-full flex justify-between text-white">
           {/* Contact */}
-          <div className="flex flex-col gap-4 w-1/2 lg:w-1/3 lg:max-w-56">
-            <h5 className="text-2xl">İletişim</h5>
+          <div className="flex flex-col gap-4 w-full md:w-1/2 lg:w-1/3 lg:max-w-56 text-sm lg:text-base">
+            <h5 className="text-lg md:text-xl lg:text-2xl">İletişim</h5>
             <p className="flex gap-4 font-light text-white/70">
               <Mail className="shrink-0" />
               ufukenerji@guclugrup.com
@@ -53,7 +53,7 @@ const Footer = () => {
             <Image src={LogoWhite} alt={"Logo"} />
           </div>
           {/* Links */}
-          <div className="flex flex-col items-end gap-4 w-1/2 lg:w-1/3 lg:max-w-56">
+          <div className="hidden md:flex flex-col items-end gap-4 md:w-1/2 lg:w-1/3 lg:max-w-56">
             <h5 className="text-2xl h-8"> </h5>
 
             {navbarItems.map((item, index) => (
@@ -70,7 +70,7 @@ const Footer = () => {
 
         <Separator className=" bg-text-secondary" />
 
-        <div className="w-full flex flex-col xl:flex-row gap-2 xl:gap-10 justify-between">
+        <div className="w-full flex flex-col xl:flex-row gap-2 xl:gap-10 justify-between text-xs md:text-sm lg:text-base">
           <p className="text-text-secondary">
             © 2024 Ufuk Enerji Elektrik Üretim A.Ş. | Her Hakkı Saklıdır.
           </p>

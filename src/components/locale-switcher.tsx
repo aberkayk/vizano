@@ -39,7 +39,7 @@ export default function LocaleSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size="sm" variant="ghost" className="hover:bg-background">
+        <Button size="sm" variant="outline" className="bg-transparent">
           <span className="uppercase text-xs">{locale}</span>
           <span className="sr-only">Change Language</span>
         </Button>

@@ -53,7 +53,7 @@ const ProductVariantCard = ({
       <h4 className="text-brand-green font-bold text-2xl text-center">
         {title}
       </h4>
-      <p className="text-justify px-2">{description}</p>
+      <p className=" px-2">{description}</p>
     </div>
   );
 };

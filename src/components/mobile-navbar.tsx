@@ -37,7 +37,7 @@ const MobileNavbar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-8 border-black/10",
+        "sticky bg-white top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-8 border-black/10",
         scrolling && "transition bg-black/70 text-white"
       )}
     >
@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                 side="right"
                 className="flex flex-col justify-between items-center p-0 border-none w-full md:hidden"
               >
-                <div className="flex flex-col items-center gap-4 w-full py-20 px-8">
+                <div className="flex flex-col items-center gap-4 w-full py-20 px-8 font-semibold">
                   {navbarItems.map((item, index) => (
                     <Link
                       className="w-fit flex justify-center"
@@ -73,9 +73,9 @@ const MobileNavbar = () => {
                       <SheetClose className="w-fit h-full flex justify-center">
                         <p
                           className={cn(
-                            "h-full w-64 transition px-3 py-2 text-xl hover:border-b border-spacing-4 border-brand-green hover:text-brand-green",
+                            "h-full w-64 transition px-3 py-2 text-xl border-b-2 border-transparent hover:border-brand-green hover:border-b-2 border-spacing-4 hover:text-brand-green",
                             pathname.includes(item.href) &&
-                              "text-brand-green border-b border-spacing-4 border-brand-green"
+                              "text-brand-green border-b-2 border-spacing-4 border-brand-green"
                           )}
                         >
                           {t(item.label)}

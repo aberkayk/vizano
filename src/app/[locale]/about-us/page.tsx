@@ -26,20 +26,20 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
         />
       </div>
 
-      <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container text-justify">
+      <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container ">
         <MotionDivRight className="flex flex-col gap-8">
-          <p className="text-lg font-light">
+          <p className=" lg:text-lg font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Aspernatur voluptatem tempore molestias, fuga voluptas nobis
             vero natus laborum magni quibusdam?
           </p>
-          <p className="text-lg font-light">
+          <p className=" lg:text-lg font-light">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Nesciunt reprehenderit sed perferendis quis exercitationem
             fugit provident odit, suscipit similique fuga? Nisi id odit
             ullam facilis corporis dolores veniam error modi.
           </p>
-          <p className="text-lg font-light">
+          <p className=" lg:text-lg font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             delectus aperiam pariatur asperiores facilis doloribus ex
             nostrum, rerum provident alias blanditiis expedita dolore
@@ -51,7 +51,7 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
           </p>
         </MotionDivRight>
 
-        <MotionDivLeft className="grid grid-cols-6 gap-6">
+        <div className="grid lg:grid-cols-6 gap-6">
           <InformationCard
             title="Vizyonumuz"
             description="Yenilenebilir enerji kaynakları alanında öncü bir güç olarak, sürdürülebilir ve çevre dostu enerji çözümleri sunarak Türkiye'nin en güvenilir enerji üretim şirketi olmak."
@@ -79,7 +79,7 @@ const AboutUsPage = ({ params: { locale } }: Props) => {
             title="Yenilikçilik"
             description="Müşterilerimizin enerji ihtiyaçlarına uygun, sürdürülebilir ve çevre dostu yenilikçi çözümler geliştirerek enerji sektöründe fark yaratırız."
           />
-        </MotionDivLeft>
+        </div>
       </div>
     </div>
   );
@@ -113,14 +113,18 @@ const InformationCard = ({
   className?: string;
 }) => {
   return (
-    <div
+    <MotionDivLeft
       className={cn(
         "flex flex-col gap-3 py-6 px-5 border border-brand-green rounded-lg drop-shadow-sm col-span-6 md:col-span-3 lg:col-span-2",
         className
       )}
     >
-      <p className="text-xl font-semibold text-brand-green">{title}</p>
-      <p className="text-lg font-light">{description}</p>
-    </div>
+      <p className="md:text-lg lg:text-xl font-semibold text-brand-green">
+        {title}
+      </p>
+      <p className="text-sm md:text-base lg:text-lg font-light">
+        {description}
+      </p>
+    </MotionDivLeft>
   );
 };

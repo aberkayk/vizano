@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-8 shadow-sm bg-background border-black/10",
+        "sticky bg-white top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-8 shadow-sm bg-background border-black/10",
         scrolling && "transition text-white bg-black/70"
       )}
     >
@@ -53,9 +53,11 @@ const Navbar = () => {
           {navbarItems.map((item, index) => (
             <Link
               className={cn(
-                "border-transparent px-3 py-[6px] text-base hover:text-brand-green hover:border-b hover:border-brand-green",
+                "border-transparent px-3 py-[6px] text-base hover:text-brand-green hover:border-b-2 hover:border-brand-green",
                 pathname.includes(item.href) &&
-                  "text-brand-green border-b border-spacing-4 border-brand-green"
+                  "text-brand-green border-b-2 border-spacing-4 border-brand-green",
+                scrolling &&
+                  "text-white border-white hover:border-white hover:text-white"
               )}
               href={item.href}
               key={index.toString()}
