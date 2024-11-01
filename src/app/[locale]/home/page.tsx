@@ -1,6 +1,6 @@
 import LandingPageCarousel from "@/components/landing-page-carousel";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
-import Tribun7 from "../../../../public/images/tribun7.jpg";
+import Santral from "../../../../public/images/santral.jpg";
 import Turbine from "../../../../public/gifs/turbine.gif";
 import Image from "next/image";
 import LandingPageProductCards from "@/components/landing-page-product-cards";
@@ -22,10 +22,10 @@ export default async function Home({ params: { locale } }: Props) {
           UFUK ENERJİ ELEKTRİK ÜRETİM A.Ş.
         </p>
         <Image
-          src={Tribun7}
+          src={Santral}
           fill
           alt="About Us Image"
-          className="object-cover object-center z-0"
+          className="object-cover z-0"
         />
       </div>
 

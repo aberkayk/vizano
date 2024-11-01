@@ -17,7 +17,8 @@
     "message": "Message",
     "number": "Phone Number",
     "send": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "contact": "Contact"
   },
   "HomePage": {
     "first-paragraph": "Established in 2015 by Ufuk Enerji Elektrik Üretim A.Ş in the districts of Kepsut and Susurluk in Balıkesir, the Poyrazgölü Wind Power Plant is an energy production facility that aims to contribute to Turkey's energy supply security while prioritizing environmental sustainability. With an installed capacity of 48.5 MWe and 21 wind turbines, Poyrazgölü WPP is a significant project in renewable energy and plays a key role in meeting our country’s clean energy needs.",

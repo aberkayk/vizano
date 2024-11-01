@@ -1,10 +1,10 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  // A list of all locales that are supported
+  // Supported locales
   locales: ["tr", "en"],
 
-  // Used when no locale matches
+  // Default locale
   defaultLocale: "tr",
 });
 
@@ -14,12 +14,10 @@ export const config = {
     // Enable a redirect to a matching locale at the root
     "/",
 
-    // Set a cookie to remember the previous locale for
-    // all requests that have a locale prefix
+    // Set a cookie to remember the previous locale for all requests that have a locale prefix
     "/(tr|en)/:path*",
 
-    // Locale eklemek için eksik yönlendirmeleri etkinleştir
-    // (ör. `/pathnames` -> `/en/pathnames`)
-    "/((?!api|_next|_vercel|.\\..|favicon.ico).*)",
+    // Exclude static files and assets from locale handling
+    "/((?!api|_next|_vercel|.\\..|favicon.ico|videos/).*)",
   ],
 };

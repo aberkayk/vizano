@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Tribun9 from "../../../../public/images/tribun9.jpg";
+import Santral from "../../../../public/images/santral.jpg";
 import { cn } from "@/lib/utils";
 import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -19,10 +19,10 @@ const AboutUsPage = async ({ params: { locale } }: Props) => {
           {t("about")}
         </p>
         <Image
-          src={Tribun9}
+          src={Santral}
           fill
           alt="About Us Image"
-          className="object-cover object-center z-0"
+          className="object-cover z-0"
         />
       </div>
 

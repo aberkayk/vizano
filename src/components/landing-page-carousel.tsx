@@ -16,16 +16,16 @@ import TenthImage from "../../public/images/tribun10.jpg";
 
 const data = [
   {
-    label: "FourthImage",
-    img: FourthImage,
-  },
-  {
     label: "FifthImage",
     img: FifthImage,
   },
   {
     label: "SixthImage",
     img: SixthImage,
+  },
+  {
+    label: "FourthImage",
+    img: FourthImage,
   },
   {
     label: "SeventhImage",
@@ -49,6 +49,22 @@ const LandingPageCarousel = () => {
   return (
     <Carousel opts={{ loop: true }} className="w-full px-8">
       <CarouselContent className="flex h-full">
+        <CarouselItem className="h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center">
+          <video
+            muted
+            autoPlay
+            className="rounded-lg object-fill"
+            style={{
+              width: "100%", // Sabit genişlik
+              height: "384px", // Sabit yükseklik
+            }}
+            controls
+            preload="none"
+          >
+            <source src="/videos/tribun-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </CarouselItem>
         {data.map((item, index) => (
           <CarouselItem
             className="h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 flex justify-center"
