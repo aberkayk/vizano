@@ -31,27 +31,8 @@ const AboutUsPage = async ({ params: { locale } }: Props) => {
 
       <div className="px-12 flex flex-col gap-16 py-24 max-w-5xl xl:container ">
         <MotionDivRight className="flex flex-col gap-8">
-          <p className=" lg:text-lg font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aspernatur voluptatem tempore molestias, fuga voluptas nobis
-            vero natus laborum magni quibusdam?
-          </p>
-          <p className=" lg:text-lg font-light">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Nesciunt reprehenderit sed perferendis quis exercitationem
-            fugit provident odit, suscipit similique fuga? Nisi id odit
-            ullam facilis corporis dolores veniam error modi.
-          </p>
-          <p className=" lg:text-lg font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            delectus aperiam pariatur asperiores facilis doloribus ex
-            nostrum, rerum provident alias blanditiis expedita dolore
-            veritatis inventore consectetur repudiandae veniam molestias
-            doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Cum esse ad fugit debitis ex laboriosam error molestiae
-            nemo cupiditate aspernatur ut, necessitatibus voluptatem eius
-            atque sed iure sit quo possimus.
-          </p>
+          <p className=" lg:text-lg font-light">{t("first")}</p>
+          <p className=" lg:text-lg font-light">{t("second")}</p>
         </MotionDivRight>
 
         <div className="grid lg:grid-cols-6 gap-6">
