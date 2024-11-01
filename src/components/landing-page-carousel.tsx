@@ -57,12 +57,11 @@ const LandingPageCarousel = () => {
             <div className="relative h-96 w-[90%] max-w-64">
               <Image
                 priority
-                className="rounded-lg "
+                className="rounded-lg object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
                 src={item.img}
                 alt={item.label}
-                objectFit="cover"
               />
             </div>
           </CarouselItem>

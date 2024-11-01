@@ -13,7 +13,6 @@ interface Props {
 }
 
 const AboutUsPage = async ({ params: { locale } }: Props) => {
-  unstable_setRequestLocale(locale);
   const t = await getTranslations("AboutUsPage");
   return (
     <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">

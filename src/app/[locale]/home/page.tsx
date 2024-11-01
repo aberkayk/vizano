@@ -14,7 +14,6 @@ interface Props {
 }
 
 export default async function Home({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
   const t = await getTranslations("HomePage");
 
   return (
@@ -35,7 +34,12 @@ export default async function Home({ params: { locale } }: Props) {
       <div className="xl:container flex flex-col gap-y-20 items-center px-8 py-16 lg:py-20">
         <MotionDivRight className="w-full flex flex-col lg:flex-row gap-8 justify-center items-center">
           <div className="relative h-48 lg:h-64 w-full lg:w-1/3">
-            <Image alt="Turbine" objectFit="contain" fill src={Turbine} />
+            <Image
+              alt="Turbine"
+              className="object-contain"
+              fill
+              src={Turbine}
+            />
           </div>
           <p className="text-center text-lg text-black/80 max-w-lg">
             {t("first-paragraph")}
@@ -57,7 +61,12 @@ export default async function Home({ params: { locale } }: Props) {
             {t("second-paragraph")}
           </p>
           <div className="relative h-48 lg:h-64 w-full lg:w-1/3">
-            <Image alt="Turbine" objectFit="contain" fill src={Turbine} />
+            <Image
+              alt="Turbine"
+              className="object-contain"
+              fill
+              src={Turbine}
+            />
           </div>
         </MotionDivRight>
 

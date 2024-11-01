@@ -1,22 +1,17 @@
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import Tribun8 from "../../../../public/images/tribun8.jpg";
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { MotionDivLeft, MotionDivRight } from "@/components/motion-div";
 import {
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
+import ContactForm from "@/components/contact-form";
 
 interface Props {
   params: { locale: string };
 }
 
 const ContactPage = async ({ params: { locale } }: Props) => {
-  unstable_setRequestLocale(locale);
   const t = await getTranslations("ContactForm");
 
   return (
@@ -34,37 +29,7 @@ const ContactPage = async ({ params: { locale } }: Props) => {
         />
       </div>
 
-      {/* Contact Form */}
-
-      {/* <h1 className="text-4xl font-bold text-center my-24">Bize Ulaşın</h1> */}
-      <div className="flex flex-col gap-4 md:grid rounded-lg max-w-3xl w-full mx-auto px-12 my-12">
-        <MotionDivLeft className="flex flex-col gap-y-1 col-span-1">
-          <Label className="font-semibold text-base">{t("name")}</Label>
-          <Input className="placeholder:text-gray-400" />
-        </MotionDivLeft>
-        <MotionDivLeft className="flex flex-col gap-y-1 col-span-1">
-          <Label className="font-semibold text-base">{t("surname")}</Label>
-          <Input className="placeholder:text-gray-400" />
-        </MotionDivLeft>
-        <MotionDivLeft className="flex flex-col gap-y-1 col-span-1">
-          <Label className="font-semibold text-base">{t("email")}</Label>
-          <Input type="email" className="placeholder:text-gray-400" />
-        </MotionDivLeft>
-        <MotionDivLeft className="flex flex-col gap-y-1 col-span-1">
-          <Label className="font-semibold text-base">{t("number")}</Label>
-          <Input className="placeholder:text-gray-400" type="number" />
-        </MotionDivLeft>
-        <MotionDivLeft className="flex flex-col gap-y-1 col-span-2">
-          <Label className="font-semibold text-base">{t("message")}</Label>
-          <Textarea className="sm:col-span-2 overflow-y-auto max-h-48 min-h-32 placeholder:text-gray-40" />
-        </MotionDivLeft>
-
-        <MotionDivLeft className="col-span-2 flex justify-center ">
-          <Button variant="green" className="w-full min-w-32 max-w-64">
-            {t("send")}
-          </Button>
-        </MotionDivLeft>
-      </div>
+      <ContactForm />
       <address className="flex flex-col items-center justify-center gap-4 text-center w-full py-24">
         {/* Address */}
         <div className="text-lg leading-8 text-muted-foreground">

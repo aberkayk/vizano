@@ -16,7 +16,8 @@
     "email": "Email",
     "message": "Mesaj",
     "number": "İletişim Numarası",
-    "send": "Gönder"
+    "send": "Gönder",
+    "sending": "Gönderiyor..."
   },
   "HomePage": {
     "first-paragraph": "Ufuk Enerji Elektrik Üretim A.Ş tarafından 2015 yılında Balıkesir’in Kepsut ve Susurluk ilçelerinde kurulan Poyrazgölü Rüzgar Enerji Santrali, Türkiye’nin enerji arz güvenliğine katkıda bulunmayı hedefleyen ve çevresel sürdürülebilirliği ön planda tutan bir enerji üretim tesisidir. 48,5 MWe kurulu gücü ve 21 rüzgar türbini ile Poyrazgölü RES, yenilenebilir enerji alanında önemli bir projedir ve ülkemizin temiz enerji ihtiyacını karşılamada kilit bir rol üstlenmektedir.",
@@ -47,5 +48,13 @@
   "Footer": {
     "rights": "© 2024 Ufuk Enerji Elektrik Üretim A.Ş. | Her Hakkı Saklıdır.",
     "contact": "İletişim"
+  },
+  "AlertMessages": {
+    "messageSuccess": "Mesaj başarıyla gönderildi.",
+    "messageFail": "Mesaj gönderilemedi.",
+    "nameRequired": "Lütfen adınızı girin.",
+    "surnameRequired": "Lütfen soyadınızı girin.",
+    "emailInvalid": "Lütfen geçerli bir email adresi girin.",
+    "messageMinLength": "Mesaj en az 10 karakter olmalı."
   }
 }

@@ -13,8 +13,6 @@ const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
 
-  console.log({ pathname });
-
   useEffect(() => {
     const listenScrollEvent = () => {
       if (window.scrollY > 70) {
