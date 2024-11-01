@@ -4,16 +4,14 @@ import Tribun7 from "../../../../public/images/tribun7.jpg";
 import Turbine from "../../../../public/gifs/turbine.gif";
 import Image from "next/image";
 import LandingPageProductCards from "@/components/landing-page-product-cards";
-import {
-  getTranslations,
-  unstable_setRequestLocale,
-} from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 interface Props {
   params: { locale: string };
 }
 
 export default async function Home({ params: { locale } }: Props) {
+  setRequestLocale(locale);
   const t = await getTranslations("HomePage");
 
   return (
