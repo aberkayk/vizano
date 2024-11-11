@@ -1,11 +1,31 @@
 import Link from "next/link";
 
-export default function NotFound() {
+export default function NotFoundPage() {
   return (
-    <div>
-      <h2>Not Found</h2>
-      <p>Could not find requested resource</p>
-      <Link href="/">Return Home</Link>
+    <div
+      style={{
+        height: "100vh",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 10,
+        fontFamily: "sans-serif",
+        backgroundColor: "black",
+        color: "white",
+      }}
+    >
+      <h1 style={{ fontWeight: 900, fontSize: 40 }}>Sayfa Bulunamadı</h1>
+      <Link
+        style={{
+          fontSize: 20,
+          textDecoration: "none",
+        }}
+        href="/"
+      >
+        Ana Sayfa
+      </Link>
     </div>
   );
 }
