@@ -4,13 +4,14 @@ import "../globals.css";
 import Navbar from "@/components/navbar";
 import MobileNavbar from "@/components/mobile-navbar";
 import Footer from "@/components/footer";
-import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
   title: "Ufuk Enerji",
   description: "Ufuk Enerji Elektrik Üretim Anonim Şirketi",
