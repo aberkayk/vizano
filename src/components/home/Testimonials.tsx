@@ -48,7 +48,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "{t(`testimonials.items.${index}.comment`)}"
+                &ldquo;{t(`testimonials.items.${index}.comment`)}&rdquo;
               </p>
             </motion.div>
           ))}

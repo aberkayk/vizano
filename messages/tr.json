@@ -45,8 +45,8 @@
   },
   "Home": {
     "hero": {
-      "title": "Türkiye'de Çözüm Ortağınız",
-      "description": "Profesyonel danışmanlık hizmetlerimizle hayallerinizi gerçeğe dönüştürüyor, Türkiye'deki yaşam ve yatırım süreçlerinizde güvenilir çözüm ortağınız oluyoruz. Uzman kadromuzla tüm ihtiyaçlarınıza özel hizmetler sunuyoruz",
+      "title": "Türkiye&apos;de Çözüm Ortağınız",
+      "description": "Profesyonel danışmanlık hizmetlerimizle hayallerinizi gerçeğe dönüştürüyor, Türkiye&apos;deki yaşam ve yatırım süreçlerinizde güvenilir çözüm ortağınız oluyoruz. Uzman kadromuzla tüm ihtiyaçlarınıza özel hizmetler sunuyoruz",
       "cta": "Hizmetlerimizi Keşfedin",
       "contact": "Bizimle İletişime Geçin"
     },
@@ -54,7 +54,7 @@
       "title": "Hizmetlerimiz",
       "residence": {
         "title": "Oturma İzni",
-        "description": "Türkiye'de yasal oturma izni süreçlerinizi profesyonel olarak yönetiyoruz. Özellikle çalışma izni ve öğrenci oturma izni başvurularınızda hızlı ve güvenilir çözümler sunuyoruz. Uzman ekibimiz tüm yasal süreçleri sizin adınıza takip eder."
+        "description": "Türkiye&apos;de yasal oturma izni süreçlerinizi profesyonel olarak yönetiyoruz. Özellikle çalışma izni ve öğrenci oturma izni başvurularınızda hızlı ve güvenilir çözümler sunuyoruz. Uzman ekibimiz tüm yasal süreçleri sizin adınıza takip eder."
       },
       "realestate": {
         "title": "Gayrimenkul",
@@ -66,7 +66,7 @@
       },
       "trade": {
         "title": "Ticari Danışmanlık",
-        "description": "İş kurma ve geliştirme süreçlerinde uzman desteği sunuyoruz. Deneyimli avukat ve muhasebeci kadromuzla, Türkiye'deki ticari faaliyetlerinizde baştan sona yanınızdayız. Hem alım hem satış operasyonlarınızda profesyonel destek sağlıyor, ticari başarınız için çalışıyoruz."
+        "description": "İş kurma ve geliştirme süreçlerinde uzman desteği sunuyoruz. Deneyimli avukat ve muhasebeci kadromuzla, Türkiye&apos;deki ticari faaliyetlerinizde baştan sona yanınızdayız. Hem alım hem satış operasyonlarınızda profesyonel destek sağlıyor, ticari başarınız için çalışıyoruz."
       }
     },
     "whyUs": {
@@ -81,23 +81,23 @@
       "items": [
         {
           "name": "Reza Ahmadi",
-          "position": "İran'dan Öğrenci",
-          "comment": "Vizano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul'da eğitim hayatıma sorunsuz başladım."
+          "position": "İran&apos;dan Öğrenci",
+          "comment": "Vizano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul&apos;da eğitim hayatıma sorunsuz başladım."
         },
         {
           "name": "Sara Mohammadi",
-          "position": "İran'dan IT Uzmanı",
-          "comment": "Çalışma izni ve oturma izni başvurularımda Vizano'nin desteği paha biçilemezdi. Şimdi İstanbul'da yazılım şirketinde çalışıyorum."
+          "position": "İran&apos;dan IT Uzmanı",
+          "comment": "Çalışma izni ve oturma izni başvurularımda Vizano&apos;nin desteği paha biçilemezdi. Şimdi İstanbul&apos;da yazılım şirketinde çalışıyorum."
         },
         {
           "name": "Mohammed Al-Rahman",
-          "position": "Dubai'den Yatırımcı",
-          "comment": "Türkiye'deki gayrimenkul yatırımlarım için Vizano'yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
+          "position": "Dubai&apos;den Yatırımcı",
+          "comment": "Türkiye&apos;deki gayrimenkul yatırımlarım için Vizano&apos;yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
         },
         {
           "name": "Hans Weber",
-          "position": "Almanya'dan Girişimci",
-          "comment": "Türkiye'de şirket kurma sürecim ve araç satın alma işlemlerim Vizano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
+          "position": "Almanya&apos;dan Girişimci",
+          "comment": "Türkiye&apos;de şirket kurma sürecim ve araç satın alma işlemlerim Vizano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
         }
       ]
     }
@@ -105,14 +105,14 @@
   "About": {
     "title": "Hakkımızda",
     "subtitle": "Güvenilir Çözüm Ortağınız",
-    "established": "2022'den beri",
+    "established": "2022&apos;den beri",
     "story": {
       "title": "Hikayemiz",
       "content": "Vizano, farklı kültürlerin bir araya gelerek ortak bir amaca hizmet etme vizyonuyla doğdu. 2022 yılında temelleri atılan şirketimiz, 2025 yılında resmi olarak faaliyetlerine başladı. Bir Türk ve bir İranlı girişimcinin yollarının kesişmesi, bugün binlerce insana hizmet veren bir başarı hikayesine dönüştü."
     },
     "mission": {
       "title": "Misyonumuz",
-      "content": "Türkiye'ye gelen yabancıların karşılaştığı zorlukları bizzat deneyimlemiş bir ekip olarak, bu süreçleri herkes için daha güvenli, şeffaf ve kolay hale getirmeyi hedefliyoruz."
+      "content": "Türkiye&apos;ye gelen yabancıların karşılaştığı zorlukları bizzat deneyimlemiş bir ekip olarak, bu süreçleri herkes için daha güvenli, şeffaf ve kolay hale getirmeyi hedefliyoruz."
     },
     "values": {
       "title": "Değerlerimiz",
@@ -123,7 +123,7 @@
     },
     "journey": {
       "title": "Yolculuğumuz",
-      "content": "Kuruluş hikayemiz, ortaklarımızdan birinin Türkiye'ye yerleşme sürecinde yaşadığı zorluklarla başladı. Oturma izni sürecinde yaşanan problemler, dolandırıcılık vakaları ve karşılaşılan zorluklar, bizi bu alanda profesyonel çözümler üretmeye yönlendirdi. Bu deneyimler, vizyonumuzu şekillendirdi ve müşterilerimize en güvenilir hizmeti sunma kararlılığımızı pekiştirdi."
+      "content": "Kuruluş hikayemiz, ortaklarımızdan birinin Türkiye&apos;ye yerleşme sürecinde yaşadığı zorluklarla başladı. Oturma izni sürecinde yaşanan problemler, dolandırıcılık vakaları ve karşılaşılan zorluklar, bizi bu alanda profesyonel çözümler üretmeye yönlendirdi. Bu deneyimler, vizyonumuzu şekillendirdi ve müşterilerimize en güvenilir hizmeti sunma kararlılığımızı pekiştirdi."
     }
   }
 }
