@@ -1,64 +1,129 @@
 {
-  "Language": {
-    "turkish": "Turkish",
-    "english": "English",
-    "deutsch": "Deutsch"
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, tr {🇹🇷 Turkish} en {🇺🇸 English} fa {🇮🇷 Persian} ar {🇸🇦 Arabic} ru {🇷🇺 Russian} other {Unknown}}"
   },
   "Navbar": {
     "home": "Home",
-    "about": "About Us",
-    "products": "Products",
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "ContactForm": {
+    "title": "Contact Us",
     "name": "Name",
     "surname": "Surname",
     "email": "Email",
-    "message": "Message",
-    "number": "Phone Number",
+    "number": "Phone",
+    "service": "Select Service",
+    "message": "Your Message",
     "send": "Send",
     "sending": "Sending...",
-    "contact": "Contact"
-  },
-  "HomePage": {
-    "first-paragraph": "Established in 2015 by Ufuk Enerji Elektrik Üretim A.Ş in the districts of Kepsut and Susurluk in Balıkesir, the Poyrazgölü Wind Power Plant is an energy production facility that aims to contribute to Turkey's energy supply security while prioritizing environmental sustainability. With an installed capacity of 48.5 MWe and 21 wind turbines, Poyrazgölü WPP is a significant project in renewable energy and plays a key role in meeting our country’s clean energy needs.",
-    "second-paragraph": "Equipped with a total of 17 x 2.3 MW and 4 x 2.35 MW modern turbines, the Poyrazgölü Wind Power Plant has an annual energy production capacity that can meet the energy needs of hundreds of thousands of households. By generating electricity from renewable energy sources, our plant helps reduce carbon emissions and represents an important step toward achieving our sustainable energy goals.",
-    "card1-title": "Environmentally Friendly Energy Production",
-    "card1-description": "Wind energy is a zero-emission energy source. It provides environmentally friendly energy production by reducing carbon emissions and contributes to a sustainable future.",
-    "card2-title": "Economic Benefits",
-    "card2-description": "Renewable wind energy reduces costs in the long run and decreases dependency on energy imports, offering an economical energy solution for countries.",
-    "card3-title": "High Efficiency",
-    "card3-description": "Modern wind turbines operate with high efficiency, generating energy even at low wind speeds, thereby maximizing energy production potential.",
-    "card4-title": "Renewable Resource Utilization",
-    "card4-description": "Wind is an unlimited and renewable energy source. It contributes to sustainable energy production by preserving natural resources."
-  },
-  "AboutUsPage": {
-    "about": "About Us",
-    "card1-title": "Our Vision",
-    "card1-description": "To become Turkey's most reliable energy production company by leading in the field of renewable energy sources, offering sustainable and environmentally friendly energy solutions.",
-    "card2-title": "Our Mission",
-    "card2-description": "To contribute to energy security and customer satisfaction through clean energy production processes equipped with innovative technologies that respect both society and nature.",
-    "card3-title": "Our Strategy",
-    "card3-description": "To offer innovative and sustainable solutions in the industry by generating energy with maximum efficiency from renewable sources like wind energy, supported by our expert team and advanced technologies.",
-    "card4-title": "Our Values",
-    "card4-description": "We analyze our customers' energy needs accurately and provide environmentally conscious solutions. We build our relationships on the principles of trust, transparency, and responsibility, contributing to social responsibility projects and prioritizing sustainability while ensuring access to energy.",
-    "card5-title": "Quality",
-    "card5-description": "In renewable energy production, we aim to offer society the highest quality and efficiency in energy through continuous improvement and innovation.",
-    "card6-title": "Innovation",
-    "card6-description": "We make a difference in the energy sector by developing innovative solutions that are sustainable and environmentally friendly, meeting the energy needs of our customers.",
-    "first": "Established in 2015 by Ufuk Enerji Elektrik Üretim A.Ş., the Poyrazgölü Wind Power Plant (WPP) operates in the districts of Kepsut and Susurluk in Balıkesir, aiming to strengthen Turkey’s energy supply security through renewable energy sources. With an installed capacity of 48.5 MWe and 21 state-of-the-art turbines, Poyrazgölü WPP plays a pioneering role in Turkey's clean energy production, advancing environmental sustainability and supporting the country’s green energy transition. This facility contributes to reducing Turkey’s dependency on external energy sources by diversifying its energy mix with electricity generated from natural resources.",
-    "second": "Equipped with high-capacity turbines, including 17 x 2.3 MW and 4 x 2.35 MW units, Poyrazgölü WPP has an annual energy production capacity sufficient to meet the needs of hundreds of thousands of households. By generating electricity from renewable sources, our plant significantly reduces carbon emissions, offering an eco-friendly energy solution aligned with our sustainable development goals. Ufuk Enerji is committed to contributing to Turkey's climate-friendly energy vision while adopting an innovative and environmentally conscious approach, setting a benchmark in the energy sector and driving progress within the industry."
+    "whatsapp": "Contact via WhatsApp",
+    "contact-us": "Contact Us",
+    "contact-description": "Get in touch with us for information about our services or your projects."
   },
   "Footer": {
-    "rights": "© 2024 Ufuk Enerji Elektrik Üretim A.Ş. | All Rights Reserved.",
-    "contact": "Contact"
+    "about": "Vizano leads the industry with innovative solutions and quality service understanding.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Istanbul, Turkey",
+    "phone": "+90 xxx xxx xx xx",
+    "email": "info@vizano.com",
+    "rights": "© 2025 Vizano. All rights reserved."
   },
   "AlertMessages": {
-    "messageSuccess": "Message submitted successfully.",
-    "messageFail": "Failed to send sessage.",
+    "messageSuccess": "Your message has been sent successfully.",
+    "messageFail": "Message could not be sent. Please try again.",
     "nameRequired": "Please enter your name.",
     "surnameRequired": "Please enter your surname.",
     "emailInvalid": "Please enter a valid email address.",
-    "messageMinLength": "Message must be at least 10 characters."
+    "phoneRequired": "Please enter your phone number.",
+    "messageMinLength": "Your message must be at least 10 characters.",
+    "serviceRequired": "Please select a service."
+  },
+  "Home": {
+    "hero": {
+      "title": "Your Solution Partner in Turkey",
+      "description": "We turn your dreams into reality with our professional consulting services, becoming your reliable solution partner in life and investment processes in Turkey. We provide specialized services for all your needs with our expert team",
+      "cta": "Discover Our Services",
+      "contact": "Contact Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "residence": {
+        "title": "Residence Permit",
+        "description": "We professionally manage your legal residence permit processes in Turkey. We offer fast and reliable solutions especially for work permit and student residence permit applications. Our expert team follows all legal processes on your behalf."
+      },
+      "realestate": {
+        "title": "Real Estate",
+        "description": "We connect you with the best investment opportunities. By conducting detailed market research tailored to your budget and needs, we offer you the most suitable and profitable real estate options. We provide professional support at every stage."
+      },
+      "automobile": {
+        "title": "Automotive",
+        "description": "We are with you in vehicle buying and selling processes. We meticulously research vehicles within your budget, examining them down to the finest detail as if we were buying for ourselves. We protect you against potential fraud by offering the most logical and reliable options."
+      },
+      "trade": {
+        "title": "Business Consulting",
+        "description": "We provide expert support in business establishment and development processes. With our experienced lawyers and accountants, we are with you throughout your commercial activities in Turkey. We provide professional support in both buying and selling operations, working for your business success."
+      }
+    },
+    "whyUs": {
+      "title": "Why Choose Us?",
+      "experience": "5+ Years Experience",
+      "support": "24/7 Support",
+      "success": "Over 1000 Satisfied Clients",
+      "trust": "100% Client Satisfaction"
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "items": [
+        {
+          "name": "Reza Ahmadi",
+          "position": "Student from Iran",
+          "comment": "My student residence permit process went very smoothly with Vizano. They handled all my paperwork professionally. I started my education life in Istanbul without any problems."
+        },
+        {
+          "name": "Sara Mohammadi",
+          "position": "IT Expert from Iran",
+          "comment": "Vizano's support in my work permit and residence permit applications was invaluable. Now I work at a software company in Istanbul."
+        },
+        {
+          "name": "Mohammed Al-Rahman",
+          "position": "Investor from Dubai",
+          "comment": "I chose Vizano for my real estate investments in Turkey. They provided professional support in everything from portfolio selection to deed transactions."
+        },
+        {
+          "name": "Hans Weber",
+          "position": "Entrepreneur from Germany",
+          "comment": "My company establishment process and vehicle purchase transactions in Turkey were completed very quickly thanks to Vizano. A reliable team that was with me at every step."
+        }
+      ]
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Your Reliable Solution Partner",
+    "established": "Since 2022",
+    "story": {
+      "title": "Our Story",
+      "content": "Vizano was born with the vision of bringing different cultures together to serve a common purpose. Our company, whose foundations were laid in 2022, officially started its operations in 2025. The intersection of paths of a Turkish and an Iranian entrepreneur has turned into a success story serving thousands of people today."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "As a team that has personally experienced the challenges faced by foreigners coming to Turkey, we aim to make these processes safer, more transparent, and easier for everyone."
+    },
+    "values": {
+      "title": "Our Values",
+      "integrity": "Integrity",
+      "transparency": "Transparency",
+      "reliability": "Reliability",
+      "expertise": "Expertise"
+    },
+    "journey": {
+      "title": "Our Journey",
+      "content": "Our founding story began with the challenges one of our partners faced while settling in Turkey. Problems in the residence permit process, fraud cases, and encountered difficulties led us to produce professional solutions in this field. These experiences shaped our vision and strengthened our determination to provide our clients with the most reliable service."
+    }
   }
 }

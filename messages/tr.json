@@ -1,64 +1,129 @@
 {
-  "Language": {
-    "turkish": "Türkçe",
-    "english": "İngilizce",
-    "deutsch": "Almanca"
+  "LocaleSwitcher": {
+    "label": "Dili değiştir",
+    "locale": "{locale, select, tr {🇹🇷 Türkçe} en {🇺🇸 İngilizce} fa {🇮🇷 Farsça} ar {🇸🇦 Arapça} ru {🇷🇺 Rusça} other {Bilinmiyor}}"
   },
   "Navbar": {
     "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
     "about": "Hakkımızda",
-    "products": "Ürünlerimiz",
+    "blog": "Blog",
     "contact": "İletişim"
   },
   "ContactForm": {
+    "title": "İletişime Geçin",
     "name": "İsim",
     "surname": "Soyisim",
-    "email": "Email",
-    "message": "Mesaj",
-    "number": "İletişim Numarası",
+    "email": "E-posta",
+    "number": "Telefon",
+    "service": "Hizmet Seçin",
+    "message": "Mesajınız",
     "send": "Gönder",
-    "sending": "Gönderiyor...",
-    "contact": "İLETİŞİM"
-  },
-  "HomePage": {
-    "first-paragraph": "Ufuk Enerji Elektrik Üretim A.Ş tarafından 2015 yılında Balıkesir’in Kepsut ve Susurluk ilçelerinde kurulan Poyrazgölü Rüzgar Enerji Santrali, Türkiye’nin enerji arz güvenliğine katkıda bulunmayı hedefleyen ve çevresel sürdürülebilirliği ön planda tutan bir enerji üretim tesisidir. 48,5 MWe kurulu gücü ve 21 rüzgar türbini ile Poyrazgölü RES, yenilenebilir enerji alanında önemli bir projedir ve ülkemizin temiz enerji ihtiyacını karşılamada kilit bir rol üstlenmektedir.",
-    "second-paragraph": "Toplamda 17 x 2,3 MW ve 4 x 2,35 MW gücündeki modern türbinleri ile donatılan Poyrazgölü Rüzgar Enerji Santrali, yıllık enerji üretim kapasitesi ile yüzbinlerce hanenin enerji ihtiyacını karşılayabilecek düzeydedir. Yenilenebilir enerji kaynaklarından ürettiği elektrikle, karbon emisyonlarının azaltılmasına yardımcı olan santralimiz, sürdürülebilir enerji hedeflerimize ulaşmada önemli bir adımı temsil etmektedir.",
-    "card1-title": "Çevre Dostu Enerji Üretimi",
-    "card1-description": "Rüzgar enerjisi, sıfır emisyonlu bir enerji kaynağıdır. Karbon salınımını azaltarak çevre dostu bir enerji üretimi sağlar ve sürdürülebilir bir gelecek için katkıda bulunur.",
-    "card2-title": "Ekonomik Avantajlar",
-    "card2-description": "Yenilenebilir rüzgar enerjisi, uzun vadede maliyetleri düşürür ve enerji ithalatına olan bağımlılığı azaltır. Ülkeler için ekonomik bir enerji çözümü sunar.",
-    "card3-title": "Yüksek Verimlilik",
-    "card3-description": "Modern rüzgar türbinleri, yüksek verimlilikle çalışarak düşük rüzgar hızlarında bile enerji üretebilir. Böylece enerji üretim potansiyelini maksimize eder.",
-    "card4-title": "Yenilenebilir Kaynak Kullanımı",
-    "card4-description": "Rüzgar, sınırsız ve yenilenebilir bir enerji kaynağıdır. Doğal kaynakları koruyarak sürdürülebilir enerji üretimine katkıda bulunur."
-  },
-  "AboutUsPage": {
-    "about": "Hakkımızda",
-    "card1-title": "Vizyonumuz",
-    "card1-description": "Yenilenebilir enerji kaynakları alanında öncü bir güç olarak, sürdürülebilir ve çevre dostu enerji çözümleri sunarak Türkiye'nin en güvenilir enerji üretim şirketi olmak.",
-    "card2-title": "Misyonumuz",
-    "card2-description": "Topluma ve doğaya saygılı, yenilikçi teknolojilerle donatılmış temiz enerji üretim süreçleriyle, yüksek müşteri memnuniyeti ve enerji güvenliğine katkı sağlamak.",
-    "card3-title": "Stratejimiz",
-    "card3-description": "Uzman kadromuz ve ileri teknolojilerimizle, rüzgar enerjisi gibi yenilenebilir kaynaklardan maksimum verimlilikle enerji üreterek sektörde yenilikçi ve sürdürülebilir çözümler sunmak.",
-    "card4-title": "Değerlerimiz",
-    "card4-description": "Müşterilerimizin enerji ihtiyaçlarını doğru analiz eder, çevreye duyarlı çözümler sunarız. Güven, şeffaflık ve sorumluluk ilkeleriyle ilişkilerimizi inşa ederiz. Enerjiye erişimi sağlarken sosyal sorumluluk projelerine katkıda bulunur ve sürdürülebilirliği ön planda tutarız.",
-    "card5-title": "Kalite",
-    "card5-description": "Yenilenebilir enerji üretiminde sürekli gelişim ve yeniliklerle, topluma en yüksek kalite ve verimlilikte enerji sunmayı hedefleriz.",
-    "card6-title": "Yenilikçilik",
-    "card6-description": "Müşterilerimizin enerji ihtiyaçlarına uygun, sürdürülebilir ve çevre dostu yenilikçi çözümler geliştirerek enerji sektöründe fark yaratırız.",
-    "first": "2015 yılında Ufuk Enerji Elektrik Üretim A.Ş. tarafından Balıkesir’in Kepsut ve Susurluk ilçelerinde faaliyete geçirilen Poyrazgölü Rüzgar Enerji Santrali (RES), Türkiye’nin yenilenebilir enerji kaynaklarına dayalı üretim kapasitesini artırarak enerji arz güvenliğine katkı sunmayı hedeflemektedir. 48,5 MWe kurulu gücü ve 21 modern türbini ile Poyrazgölü RES, Türkiye'nin temiz enerji üretiminde öncü bir rol oynayarak çevresel sürdürülebilirlik ve yeşil enerji dönüşümü yolunda sağlam adımlar atmaktadır. Türkiye’nin enerjide dışa bağımlılığını azaltmayı amaçlayan santral, doğal kaynaklardan sağlanan elektrik üretimiyle ülkemizin enerji kaynaklarının çeşitlendirilmesine destek olmaktadır.",
-    "second": "Yüksek kapasiteli 17 x 2,3 MW ve 4 x 2,35 MW türbinlerle donatılan Poyrazgölü RES, yıllık enerji üretim kapasitesi sayesinde yüzbinlerce hanenin elektrik ihtiyacını karşılayacak düzeydedir. Yenilenebilir kaynaklardan ürettiği enerji ile karbon salınımını büyük oranda azaltan tesisimiz, sürdürülebilir kalkınma hedeflerimiz doğrultusunda çevreye duyarlı bir enerji çözümü sunmaktadır. Ufuk Enerji, Türkiye’nin iklim dostu enerji vizyonuna katkı sağlarken aynı zamanda enerji sektöründe yenilikçi ve çevreci bir yaklaşımı benimseyerek sektördeki gelişmelere yön vermeyi amaçlamaktadır."
+    "sending": "Gönderiliyor...",
+    "whatsapp": "WhatsApp ile İletişime Geçin",
+    "contact-us": "Bizimle İletişime Geçin",
+    "contact-description": "Hizmetlerimiz hakkında bilgi almak veya projeleriniz için bizimle iletişime geçebilirsiniz."
   },
   "Footer": {
-    "rights": "© 2024 Ufuk Enerji Elektrik Üretim A.Ş. | Her Hakkı Saklıdır.",
-    "contact": "İletişim"
+    "about": "Vizano, yenilikçi çözümler ve kaliteli hizmet anlayışıyla sektörde öncü bir konumda yer almaktadır.",
+    "quickLinks": "Hızlı Linkler",
+    "contact": "İletişim",
+    "address": "İstanbul, Türkiye",
+    "phone": "+90 xxx xxx xx xx",
+    "email": "info@vizano.com",
+    "rights": "© 2025 Vizano. Tüm hakları saklıdır."
   },
   "AlertMessages": {
-    "messageSuccess": "Mesaj başarıyla gönderildi.",
-    "messageFail": "Mesaj gönderilemedi.",
+    "messageSuccess": "Mesajınız başarıyla gönderildi.",
+    "messageFail": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
     "nameRequired": "Lütfen adınızı girin.",
     "surnameRequired": "Lütfen soyadınızı girin.",
-    "emailInvalid": "Lütfen geçerli bir email adresi girin.",
-    "messageMinLength": "Mesaj en az 10 karakter olmalı."
+    "emailInvalid": "Lütfen geçerli bir e-posta adresi girin.",
+    "phoneRequired": "Lütfen telefon numaranızı girin.",
+    "messageMinLength": "Mesajınız en az 10 karakter olmalıdır.",
+    "serviceRequired": "Lütfen bir hizmet seçin."
+  },
+  "Home": {
+    "hero": {
+      "title": "Türkiye'de Çözüm Ortağınız",
+      "description": "Profesyonel danışmanlık hizmetlerimizle hayallerinizi gerçeğe dönüştürüyor, Türkiye'deki yaşam ve yatırım süreçlerinizde güvenilir çözüm ortağınız oluyoruz. Uzman kadromuzla tüm ihtiyaçlarınıza özel hizmetler sunuyoruz",
+      "cta": "Hizmetlerimizi Keşfedin",
+      "contact": "Bizimle İletişime Geçin"
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "residence": {
+        "title": "Oturma İzni",
+        "description": "Türkiye'de yasal oturma izni süreçlerinizi profesyonel olarak yönetiyoruz. Özellikle çalışma izni ve öğrenci oturma izni başvurularınızda hızlı ve güvenilir çözümler sunuyoruz. Uzman ekibimiz tüm yasal süreçleri sizin adınıza takip eder."
+      },
+      "realestate": {
+        "title": "Gayrimenkul",
+        "description": "En iyi yatırım fırsatlarıyla sizleri buluşturuyoruz. Bütçenize ve ihtiyaçlarınıza özel detaylı pazar araştırması yaparak, size en uygun ve karlı gayrimenkul seçeneklerini sunuyoruz. Her aşamada profesyonel destek sağlıyoruz."
+      },
+      "automobile": {
+        "title": "Otomotiv",
+        "description": "Araç alım-satım süreçlerinizde yanınızdayız. Bütçenize uygun araçları titizlikle araştırıyor, sanki kendimize alıyormuş gibi en ince detayına kadar inceliyoruz. Olası dolandırıcılıklara karşı sizi koruyarak, en mantıklı ve güvenilir seçenekleri sunuyoruz."
+      },
+      "trade": {
+        "title": "Ticari Danışmanlık",
+        "description": "İş kurma ve geliştirme süreçlerinde uzman desteği sunuyoruz. Deneyimli avukat ve muhasebeci kadromuzla, Türkiye'deki ticari faaliyetlerinizde baştan sona yanınızdayız. Hem alım hem satış operasyonlarınızda profesyonel destek sağlıyor, ticari başarınız için çalışıyoruz."
+      }
+    },
+    "whyUs": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "experience": "5+ Yıllık Deneyim",
+      "support": "7/24 Destek",
+      "success": "1000 Üzerinde Memnun Müşteri",
+      "trust": "100% Müşteri Memnuniyeti"
+    },
+    "testimonials": {
+      "title": "Müşterilerimizin Görüşleri",
+      "items": [
+        {
+          "name": "Reza Ahmadi",
+          "position": "İran'dan Öğrenci",
+          "comment": "Vizano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul'da eğitim hayatıma sorunsuz başladım."
+        },
+        {
+          "name": "Sara Mohammadi",
+          "position": "İran'dan IT Uzmanı",
+          "comment": "Çalışma izni ve oturma izni başvurularımda Vizano'nin desteği paha biçilemezdi. Şimdi İstanbul'da yazılım şirketinde çalışıyorum."
+        },
+        {
+          "name": "Mohammed Al-Rahman",
+          "position": "Dubai'den Yatırımcı",
+          "comment": "Türkiye'deki gayrimenkul yatırımlarım için Vizano'yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
+        },
+        {
+          "name": "Hans Weber",
+          "position": "Almanya'dan Girişimci",
+          "comment": "Türkiye'de şirket kurma sürecim ve araç satın alma işlemlerim Vizano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
+        }
+      ]
+    }
+  },
+  "About": {
+    "title": "Hakkımızda",
+    "subtitle": "Güvenilir Çözüm Ortağınız",
+    "established": "2022'den beri",
+    "story": {
+      "title": "Hikayemiz",
+      "content": "Vizano, farklı kültürlerin bir araya gelerek ortak bir amaca hizmet etme vizyonuyla doğdu. 2022 yılında temelleri atılan şirketimiz, 2025 yılında resmi olarak faaliyetlerine başladı. Bir Türk ve bir İranlı girişimcinin yollarının kesişmesi, bugün binlerce insana hizmet veren bir başarı hikayesine dönüştü."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "content": "Türkiye'ye gelen yabancıların karşılaştığı zorlukları bizzat deneyimlemiş bir ekip olarak, bu süreçleri herkes için daha güvenli, şeffaf ve kolay hale getirmeyi hedefliyoruz."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "integrity": "Dürüstlük",
+      "transparency": "Şeffaflık",
+      "reliability": "Güvenilirlik",
+      "expertise": "Uzmanlık"
+    },
+    "journey": {
+      "title": "Yolculuğumuz",
+      "content": "Kuruluş hikayemiz, ortaklarımızdan birinin Türkiye'ye yerleşme sürecinde yaşadığı zorluklarla başladı. Oturma izni sürecinde yaşanan problemler, dolandırıcılık vakaları ve karşılaşılan zorluklar, bizi bu alanda profesyonel çözümler üretmeye yönlendirdi. Bu deneyimler, vizyonumuzu şekillendirdi ve müşterilerimize en güvenilir hizmeti sunma kararlılığımızı pekiştirdi."
+    }
   }
 }

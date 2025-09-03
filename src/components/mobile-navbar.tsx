@@ -10,12 +10,12 @@ import {
 } from "@/components/ui/sheet";
 import { navbarItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { Link } from "@/navigation";
-import LocaleSwitcher from "./locale-switcher";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
 import { usePathname } from "next/navigation";
+import LocaleSwitcher from "./locale-switcher";
 
 const MobileNavbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -37,19 +37,27 @@ const MobileNavbar = () => {
   return (
     <div
       className={cn(
-        "sticky bg-white top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-8 border-black/10",
+        "sticky bg-white top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-4 border-black/10",
         scrolling && "transition bg-black/70 text-white"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
         <div className="flex items-center justify-between w-full">
           <Link href="/home">
-            <div className="relative w-48">
-              <Image src={Logo} alt={"Logo"} />
+            <div className="relative">
+              <Image
+                src={Logo}
+                alt={"Logo"}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                width={120}
+                height={40}
+              />
             </div>
           </Link>
           <div className="flex gap-2">
-            <LocaleSwitcher />
+            <div className="text-black">
+              <LocaleSwitcher />
+            </div>
             <Sheet>
               <SheetTrigger asChild>
                 <div className="border rounded-md flex justify-center items-center py-[1.5px] px-1">

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -17,8 +18,9 @@ import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import { sendMail } from "@/lib/mail";
 import { Label } from "./ui/label";
+import { useState } from "react";
 
-export default function ContactForm() {
+const ContactForm = () => {
   const t = useTranslations("ContactForm");
   const y = useTranslations("AlertMessages");
 
@@ -59,11 +61,27 @@ export default function ContactForm() {
     }
   };
 
+  const inputVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <Form {...form}>
-      <form
-        className="items-center w-full max-w-3xl"
+      <motion.form
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
         onSubmit={form.handleSubmit(onSubmit)}
+        className="items-center justify-center w-full max-w-3xl space-y-6"
       >
         <div className="flex flex-col gap-4 md:grid rounded-lg max-w-3xl w-full mx-auto px-12 my-12">
           <div className="flex flex-col gap-y-1 col-span-1">
@@ -74,7 +92,9 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem className="lg:col-span-2">
                   <FormControl>
-                    <Input {...field} />
+                    <motion.div variants={inputVariants}>
+                      <Input {...field} />
+                    </motion.div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -91,7 +111,9 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem className="lg:col-span-2">
                   <FormControl>
-                    <Input {...field} />
+                    <motion.div variants={inputVariants}>
+                      <Input {...field} />
+                    </motion.div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -106,7 +128,9 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem className="lg:col-span-2">
                   <FormControl>
-                    <Input {...field} />
+                    <motion.div variants={inputVariants}>
+                      <Input {...field} />
+                    </motion.div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -123,7 +147,9 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem className="lg:col-span-2">
                   <FormControl>
-                    <Input {...field} />
+                    <motion.div variants={inputVariants}>
+                      <Input {...field} />
+                    </motion.div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -140,10 +166,12 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem className="lg:col-span-2">
                   <FormControl>
-                    <Textarea
-                      {...field}
-                      className="sm:col-span-2 overflow-y-auto max-h-48 min-h-32 placeholder:text-gray-40"
-                    />
+                    <motion.div variants={inputVariants}>
+                      <Textarea
+                        {...field}
+                        className="sm:col-span-2 overflow-y-auto max-h-48 min-h-32 placeholder:text-gray-40"
+                      />
+                    </motion.div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -152,7 +180,6 @@ export default function ContactForm() {
           </div>
           <div className="col-span-2 flex justify-center ">
             <Button
-              variant="green"
               className="w-full min-w-32 max-w-64"
               disabled={isLoading}
             >
@@ -160,7 +187,9 @@ export default function ContactForm() {
             </Button>
           </div>
         </div>
-      </form>
+      </motion.form>
     </Form>
   );
-}
+};
+
+export default ContactForm;

@@ -20,17 +20,22 @@ const config = {
     extend: {
       colors: {
         brand: {
-          green: "var(--brand-green)",
-          text: "var(--brand-text)",
+          primary: "var(--brand-primary)", // #1a2b5f
+          secondary: "var(--brand-secondary)", // #34b0ce
+          accent: "var(--brand-accent)", // #f5e6d3
+        },
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          light: "var(--background-light)", // #f8f9fa
         },
         text: {
+          dark: "var(--text-dark)", // #2d3436
           DEFAULT: "var(--text)",
           secondary: "var(--text-secondary)",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -82,7 +87,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwindcss-rtl")],
 } satisfies Config;
 
 export default config;
