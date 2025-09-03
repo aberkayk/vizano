@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
+import LogoWhite from "../../public/logo-white.png";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -50,6 +51,15 @@ const Navbar = () => {
               sizes="(max-width: 768px) 100vw, 33vw"
               width={150}
               height={50}
+              className={cn(scrolling && "hidden")}
+            />
+            <Image
+              src={LogoWhite}
+              alt={"Logo"}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              width={150}
+              height={50}
+              className={cn(scrolling && "block", "hidden")}
             />
           </div>
         </Link>
