@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Poppins, Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/navbar";
 import MobileNavbar from "@/components/mobile-navbar";
@@ -8,6 +8,7 @@ import WhatsAppButton from "@/components/whatsapp-button";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import Head from "next/head";
+import { Toaster } from "sonner";
 
 const font = Poppins({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -15,26 +16,26 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ufuk Enerji",
-  description: "Ufuk Enerji Elektrik Üretim Anonim Şirketi",
+  title: "Visano",
+  description: "Visano Oturum İzni ve Yatırım Danışmanlık Şirketi",
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization", // Yerel bir iş yeri için "LocalBusiness" de seçebilirsiniz
-  name: "Vizano Consulting",
-  url: "https://vizanotr.com", // Sitenizin URL'si
-  logo: "https://ufukenerji.com.tr/square-logo.png", // Public klasöründeki logonuzun URL'si
+  name: "Visano Consulting",
+  url: "https://visanotr.com", // Sitenizin URL'si
+  logo: "https://visano.com.tr/logo.png", // Public klasöründeki logonuzun URL'si
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+90 506 669 57 96", // Şirket telefon numarası
-    email: "vizanotr@gmail.com", // Şirket e-posta adresi
+    email: "visanotr@gmail.com", // Şirket e-posta adresi
   },
   description:
-    "Ufuk Enerji, 2015 yılında Balıkesir'in Kepsut ve Susurluk ilçelerinde kurulan Poyrazgölü Rüzgar Enerji Santrali ile Türkiye'nin yenilenebilir enerji kaynaklarına katkı sağlayan bir şirkettir.",
+    "Profesyonel danışmanlık hizmetlerimizle hayallerinizi gerçeğe dönüştürüyor, Türkiye'deki yaşam ve yatırım süreçlerinizde güvenilir çözüm ortağınız oluyoruz.",
 };
 
-const locales = ["en"];
+const locales = ["tr", "en", "ar", "fa", "ru"];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -65,6 +66,7 @@ export default async function RootLayout({
           <main>{children}</main>
           <Footer />
           <WhatsAppButton />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

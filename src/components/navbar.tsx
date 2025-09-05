@@ -45,22 +45,24 @@ const Navbar = () => {
       <div className="h-full w-full gap-3 xl:container grid grid-cols-5 items-center">
         <Link href="/home">
           <div className="relative">
-            <Image
-              src={Logo}
-              alt={"Logo"}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={150}
-              height={50}
-              className={cn(scrolling && "hidden")}
-            />
-            <Image
-              src={LogoWhite}
-              alt={"Logo"}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={150}
-              height={50}
-              className={cn(scrolling && "block", "hidden")}
-            />
+            {scrolling ? (
+              <Image
+                src={LogoWhite}
+                alt={"Logo"}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                width={150}
+                height={50}
+              />
+            ) : (
+              <Image
+                src={Logo}
+                alt={"Logo"}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                width={150}
+                height={50}
+                className={cn(scrolling && "hidden")}
+              />
+            )}
           </div>
         </Link>
         <div className="flex gap-3 col-span-3 justify-center font-semibold">

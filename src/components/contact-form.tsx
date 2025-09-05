@@ -18,7 +18,6 @@ import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import { sendMail } from "@/lib/mail";
 import { Label } from "./ui/label";
-import { useState } from "react";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
@@ -54,10 +53,22 @@ const ContactForm = () => {
       text: mailText,
     });
     if (response?.messageId) {
-      toast.success(t("messageSuccess"));
+      const currentDate = new Date();
+      const formattedDate = currentDate.toLocaleDateString("tr-TR", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+      const formattedTime = currentDate.toLocaleTimeString("tr-TR", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+      toast.success(y("messageSuccess"));
       form.reset(); // Formu başarıyla gönderildiğinde sıfırla
     } else {
-      toast.error(t("messageFail"));
+      toast.error(y("messageFail"));
     }
   };
 

@@ -1,14 +1,15 @@
 "use server";
-
 import nodemailer from "nodemailer";
-
+const SMTP_SERVER_USERNAME = process.env.SMTP_SERVER_USERNAME;
+const SMTP_SERVER_PASSWORD = process.env.SMTP_SERVER_PASSWORD;
+const SITE_MAIL_RECIEVER = process.env.SITE_MAIL_RECIEVER;
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: true, // SSL bağlantısı için true olmalı
+  service: "gmail",
+  port: 587,
+  secure: true,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    user: SMTP_SERVER_USERNAME,
+    pass: SMTP_SERVER_PASSWORD,
   },
 });
 
@@ -26,14 +27,19 @@ export async function sendMail({
   html?: string;
 }) {
   try {
-    const isVerified = await transporter.verify();
+    await transporter.verify();
   } catch (error) {
-    console.error("Something Went Wrong", error);
+    console.error(
+      "Something Went Wrong",
+      SMTP_SERVER_USERNAME,
+      SMTP_SERVER_PASSWORD,
+      error
+    );
     return;
   }
   const info = await transporter.sendMail({
     from: email,
-    to: sendTo || process.env.NEXT_PUBLIC_EMAIL_TO,
+    to: sendTo || SITE_MAIL_RECIEVER,
     subject: subject,
     text: text,
     html: html ? html : "",

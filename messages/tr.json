@@ -25,13 +25,13 @@
     "contact-description": "Hizmetlerimiz hakkında bilgi almak veya projeleriniz için bizimle iletişime geçebilirsiniz."
   },
   "Footer": {
-    "about": "Vizano, yenilikçi çözümler ve kaliteli hizmet anlayışıyla sektörde öncü bir konumda yer almaktadır.",
+    "about": "Visano, yenilikçi çözümler ve kaliteli hizmet anlayışıyla sektörde öncü bir konumda yer almaktadır.",
     "quickLinks": "Hızlı Linkler",
     "contact": "İletişim",
     "address": "İstanbul, Türkiye",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@vizano.com",
-    "rights": "© 2025 Vizano. Tüm hakları saklıdır."
+    "email": "info@visano.com",
+    "rights": "© 2025 Visano. Tüm hakları saklıdır."
   },
   "AlertMessages": {
     "messageSuccess": "Mesajınız başarıyla gönderildi.",
@@ -82,22 +82,22 @@
         {
           "name": "Reza Ahmadi",
           "position": "İran'dan Öğrenci",
-          "comment": "Vizano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul'da eğitim hayatıma sorunsuz başladım."
+          "comment": "Visano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul'da eğitim hayatıma sorunsuz başladım."
         },
         {
           "name": "Sara Mohammadi",
           "position": "İran'dan IT Uzmanı",
-          "comment": "Çalışma izni ve oturma izni başvurularımda Vizano'nin desteği paha biçilemezdi. Şimdi İstanbul'da yazılım şirketinde çalışıyorum."
+          "comment": "Çalışma izni ve oturma izni başvurularımda Visano'nin desteği paha biçilemezdi. Şimdi İstanbul'da yazılım şirketinde çalışıyorum."
         },
         {
           "name": "Mohammed Al-Rahman",
           "position": "Dubai'den Yatırımcı",
-          "comment": "Türkiye'deki gayrimenkul yatırımlarım için Vizano'yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
+          "comment": "Türkiye'deki gayrimenkul yatırımlarım için Visano'yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
         },
         {
           "name": "Hans Weber",
           "position": "Almanya'dan Girişimci",
-          "comment": "Türkiye'de şirket kurma sürecim ve araç satın alma işlemlerim Vizano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
+          "comment": "Türkiye'de şirket kurma sürecim ve araç satın alma işlemlerim Visano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
         }
       ]
     }
@@ -108,7 +108,7 @@
     "established": "2022'den beri",
     "story": {
       "title": "Hikayemiz",
-      "content": "Vizano, farklı kültürlerin bir araya gelerek ortak bir amaca hizmet etme vizyonuyla doğdu. 2022 yılında temelleri atılan şirketimiz, 2025 yılında resmi olarak faaliyetlerine başladı. Bir Türk ve bir İranlı girişimcinin yollarının kesişmesi, bugün binlerce insana hizmet veren bir başarı hikayesine dönüştü."
+      "content": "Visano, farklı kültürlerin bir araya gelerek ortak bir amaca hizmet etme vizyonuyla doğdu. 2022 yılında temelleri atılan şirketimiz, 2025 yılında resmi olarak faaliyetlerine başladı. Bir Türk ve bir İranlı girişimcinin yollarının kesişmesi, bugün binlerce insana hizmet veren bir başarı hikayesine dönüştü."
     },
     "mission": {
       "title": "Misyonumuz",

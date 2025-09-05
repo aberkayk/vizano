@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import React from "react";
-import DreamingImage from "../../../public/images/vizano.png";
+import HouseImage from "../../../public/images/house.png";
 import Image from "next/image";
 
 const fadeInUp = {
@@ -72,10 +72,11 @@ const AboutUs = () => {
 
       <div className="relative flex items-center mx-auto justify-center w-full aspect-square max-w-lg rounded-sm my-6">
         <Image
-          src={DreamingImage}
+          src={HouseImage}
           alt="Hero"
           fill
           className="object-contain rounded-sm"
+          loading="lazy"
         />
       </div>
 

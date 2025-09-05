@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import DreamingImage from "../../../public/images/happy-people.png";
+import ContractImage from "../../../public/images/contract.png";
 
 export default function Testimonials() {
   const t = useTranslations("Home");
@@ -11,12 +11,12 @@ export default function Testimonials() {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="relative flex items-center mx-auto justify-center w-full aspect-square max-w-lg rounded-sm mb-16">
+        <div className="relative flex items-center mx-auto justify-center w-full aspect-[5/3] max-w-lg rounded-sm mb-16 min-h-96">
           <Image
-            src={DreamingImage}
+            src={ContractImage}
             alt="Hero"
             fill
-            className="object-contain rounded-sm"
+            className="object-cover rounded-sm"
           />
         </div>
         <motion.h2

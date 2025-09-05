@@ -14,6 +14,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
+import LogoWhite from "../../public/logo-white.png";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -45,13 +46,24 @@ const MobileNavbar = () => {
         <div className="flex items-center justify-between w-full">
           <Link href="/home">
             <div className="relative">
-              <Image
-                src={Logo}
-                alt={"Logo"}
-                sizes="(max-width: 768px) 100vw, 33vw"
-                width={120}
-                height={40}
-              />
+              {scrolling ? (
+                <Image
+                  src={LogoWhite}
+                  alt={"Logo"}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={150}
+                  height={50}
+                />
+              ) : (
+                <Image
+                  src={Logo}
+                  alt={"Logo"}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={150}
+                  height={50}
+                  className={cn(scrolling && "hidden")}
+                />
+              )}
             </div>
           </Link>
           <div className="flex gap-2">
