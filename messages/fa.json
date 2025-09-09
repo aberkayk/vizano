@@ -21,6 +21,7 @@
     "send": "ارسال",
     "sending": "در حال ارسال...",
     "whatsapp": "تماس از طریق واتس‌اپ",
+    "whatsapp-message": "سلام! می‌خواهم اقامت ترکیه بگیرم.",
     "contact-us": "تماس با ما",
     "contact-description": "برای کسب اطلاعات در مورد خدمات ما یا پروژه‌های خود با ما تماس بگیرید"
   },
@@ -30,7 +31,7 @@
     "contact": "تماس",
     "address": "استانبول، ترکیه",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@visano.com",
+    "email": "visanoistanbul@gmail.com",
     "rights": "© 2025 ویزانو. تمامی حقوق محفوظ است"
   },
   "AlertMessages": {

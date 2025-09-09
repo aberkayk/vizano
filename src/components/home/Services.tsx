@@ -30,7 +30,7 @@ export default function Services() {
   const t = useTranslations("Home");
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

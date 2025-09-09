@@ -21,6 +21,7 @@
     "send": "Отправить",
     "sending": "Отправка...",
     "whatsapp": "Связаться через WhatsApp",
+    "whatsapp-message": "Здравствуйте! Я хочу получить вид на жительство в Турции.",
     "contact-us": "Свяжитесь с нами",
     "contact-description": "Свяжитесь с нами для получения информации о наших услугах или ваших проектах"
   },
@@ -30,7 +31,7 @@
     "contact": "Контакты",
     "address": "Стамбул, Турция",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@visano.com",
+    "email": "visanoistanbul@gmail.com",
     "rights": "© 2025 Visano. Все права защищены"
   },
   "AlertMessages": {

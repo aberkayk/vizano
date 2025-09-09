@@ -21,6 +21,7 @@
     "send": "Gönder",
     "sending": "Gönderiliyor...",
     "whatsapp": "WhatsApp ile İletişime Geçin",
+    "whatsapp-message": "Merhaba! Türkiye'de oturum izni almak istiyorum.",
     "contact-us": "Bizimle İletişime Geçin",
     "contact-description": "Hizmetlerimiz hakkında bilgi almak veya projeleriniz için bizimle iletişime geçebilirsiniz."
   },
@@ -30,7 +31,7 @@
     "contact": "İletişim",
     "address": "İstanbul, Türkiye",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@visano.com",
+    "email": "visanoistanbul@gmail.com",
     "rights": "© 2025 Visano. Tüm hakları saklıdır."
   },
   "AlertMessages": {
@@ -48,7 +49,7 @@
       "title": "Türkiye'de Çözüm Ortağınız",
       "description": "Profesyonel danışmanlık hizmetlerimizle hayallerinizi gerçeğe dönüştürüyor, Türkiye'deki yaşam ve yatırım süreçlerinizde güvenilir çözüm ortağınız oluyoruz. Uzman kadromuzla tüm ihtiyaçlarınıza özel hizmetler sunuyoruz",
       "cta": "Hizmetlerimizi Keşfedin",
-      "contact": "Bizimle İletişime Geçin"
+      "contact": "İletişime Geçin"
     },
     "services": {
       "title": "Hizmetlerimiz",

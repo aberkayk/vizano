@@ -21,6 +21,7 @@
     "send": "Send",
     "sending": "Sending...",
     "whatsapp": "Contact via WhatsApp",
+    "whatsapp-message": "Hello! I would like to get a residence permit in Turkey.",
     "contact-us": "Contact Us",
     "contact-description": "Get in touch with us for information about our services or your projects."
   },
@@ -30,7 +31,7 @@
     "contact": "Contact",
     "address": "Istanbul, Turkey",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@visano.com",
+    "email": "visanoistanbul@gmail.com",
     "rights": "© 2025 Visano. All rights reserved."
   },
   "AlertMessages": {

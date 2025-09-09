@@ -3,6 +3,7 @@ import React from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/contact-form";
 import ContactImage from "../../../../public/images/contact.png";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 interface Props {
   params: { locale: string };
@@ -67,6 +68,7 @@ const ContactPage = async ({ params: { locale } }: Props) => {
                   <span className="text-gray-600">visanotr@gmail.com</span>
                 </div>
               </div>
+              <WhatsAppButton isFloating={false} />
             </div>
           </div>
           <div className="relative flex items-center mx-auto justify-center w-full aspect-square max-w-lg rounded-sm">

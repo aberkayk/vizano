@@ -21,6 +21,7 @@
     "send": "إرسال",
     "sending": "جاري الإرسال...",
     "whatsapp": "تواصل عبر واتساب",
+    "whatsapp-message": "مرحباً! أريد الحصول على تصريح إقامة في تركيا.",
     "contact-us": "اتصل بنا",
     "contact-description": "تواصل معنا للحصول على معلومات حول خدماتنا أو مشاريعك"
   },
@@ -30,7 +31,7 @@
     "contact": "اتصل بنا",
     "address": "إسطنبول، تركيا",
     "phone": "+90 xxx xxx xx xx",
-    "email": "info@visano.com",
+    "email": "visanoistanbul@gmail.com",
     "rights": "© 2025 فيزانو. جميع الحقوق محفوظة"
   },
   "AlertMessages": {

@@ -3,13 +3,24 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import HomepageSlider from "../homepage-slider";
+import WhatsAppButton from "../whatsapp-button";
 
 export default function Hero() {
   const t = useTranslations("Home");
 
+  const scrollToServices = () => {
+    const servicesElement = document.getElementById("services");
+    if (servicesElement) {
+      servicesElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary/10 to-transparent">
-      <div className="container mx-auto px-4 grid 2xl:grid-cols-2 gap-12 items-center pt-10">
+      <div className="container mx-auto px-4 grid 2xl:grid-cols-2 gap-12 items-center pt-10 lg:pt-0">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -22,13 +33,17 @@ export default function Hero() {
           <p className="text-xl mb-8 text-gray-600 text-center 2xl:text-left">
             {t("hero.description")}
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-primary text-white px-8 py-3 rounded-lg w-fit"
-          >
-            {t("hero.cta")}
-          </motion.button>
+          <div className="flex gap-2">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollToServices}
+              className="bg-primary text-white px-8 py-3 rounded-lg w-fit"
+            >
+              {t("hero.cta")}
+            </motion.button>
+            <WhatsAppButton isFloating={false} />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
