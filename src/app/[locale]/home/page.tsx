@@ -52,7 +52,7 @@ export default async function Home({ params: { locale } }: Props) {
   const t = await getTranslations("Home");
 
   return (
-    <main className="w-full">
+    <main className="w-full overflow-x-hidden">
       <Hero />
       <Services />
       <WhyUs />

@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "sticky bg-white top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-4 shadow-sm bg-background border-black/10",
+        "sticky max-w-screen bg-white top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-4 shadow-sm bg-background border-black/10",
         scrolling && "transition text-white bg-black/70"
       )}
     >

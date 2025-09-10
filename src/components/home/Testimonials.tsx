@@ -28,7 +28,7 @@ export default function Testimonials() {
           {t("testimonials.title")}
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[0, 1, 2, 3].map((index) => (
+          {[0, 1, 2, 3, 4, 5].map((index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

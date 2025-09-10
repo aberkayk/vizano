@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import HomepageSlider from "../homepage-slider";
-import WhatsAppButton from "../whatsapp-button";
 
 export default function Hero() {
   const t = useTranslations("Home");
@@ -25,7 +24,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center 2xl:text-left flex flex-col justify-center items-center 2xl:items-start mt-32 2xl:mt-0"
+          className="text-center 2xl:text-left flex flex-col justify-center items-center 2xl:items-start mt-6 2xl:mt-0"
         >
           <h1 className="text-5xl font-bold mb-6 leading-normal text-center 2xl:text-left">
             {t("hero.title")}
@@ -42,7 +41,6 @@ export default function Hero() {
             >
               {t("hero.cta")}
             </motion.button>
-            <WhatsAppButton isFloating={false} />
           </div>
         </motion.div>
         <motion.div
