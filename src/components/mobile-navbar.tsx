@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/sheet";
 import { navbarItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";

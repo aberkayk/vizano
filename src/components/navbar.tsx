@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { navbarItems } from "@/lib/constants";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";

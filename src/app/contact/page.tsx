@@ -1,16 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contact-form";
-import ContactImage from "../../../../public/images/contact.png";
+import ContactImage from "../../../public/images/contact.png";
 import WhatsAppButton from "@/components/whatsapp-button";
 
-interface Props {
-  params: { locale: string };
-}
-
-const ContactPage = async ({ params: { locale } }: Props) => {
-  setRequestLocale(locale);
+export default async function ContactPage() {
   const t = await getTranslations("ContactForm");
 
   return (
@@ -87,6 +82,4 @@ const ContactPage = async ({ params: { locale } }: Props) => {
       </div>
     </div>
   );
-};
-
-export default ContactPage;
+}

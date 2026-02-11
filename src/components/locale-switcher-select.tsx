@@ -1,9 +1,7 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { Locale } from "next-intl";
 import { ReactNode, useEffect, useState, useTransition } from "react";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { useRouter } from "next/navigation";
 import {
   Select,
   SelectContent,
@@ -24,20 +22,12 @@ export default function LocaleSwitcherSelect({
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
-  const pathname = usePathname();
-  const params = useParams();
   const [scrolling, setScrolling] = useState(false);
 
   function onValueChange(next: string) {
-    const nextLocale = next as Locale;
+    document.cookie = `locale=${next};path=/;max-age=${365 * 24 * 60 * 60}`;
     startTransition(() => {
-      router.replace(
-        // @ts-expect-error -- TypeScript will validate that only known `params`
-        // are used in combination with a given `pathname`. Since the two will
-        // always match for the current route, we can skip runtime checks.
-        { pathname, params },
-        { locale: nextLocale }
-      );
+      router.refresh();
     });
   }
 

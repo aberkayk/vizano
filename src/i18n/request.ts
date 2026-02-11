@@ -1,20 +1,23 @@
 import { getRequestConfig } from "next-intl/server";
-import { routing } from "./routing";
-import { hasLocale } from "next-intl";
+import { cookies } from "next/headers";
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  // Typically corresponds to the `[locale]` segment
-  const requested = await requestLocale;
-  const locale = hasLocale(routing.locales, requested)
-    ? requested
-    : routing.defaultLocale;
+const locales = ["en", "tr", "ar", "ru", "fa"] as const;
+const defaultLocale = "tr";
+
+export type Locale = (typeof locales)[number];
+
+export default getRequestConfig(async () => {
+  const store = await cookies();
+  const requested = store.get("locale")?.value;
+  const locale = locales.includes(requested as Locale)
+    ? (requested as string)
+    : defaultLocale;
 
   return {
     locale,
     messages: (
       await (locale === "tr"
-        ? // When using Turbopack, this will enable HMR for `en`
-          import("../../messages/tr.json")
+        ? import("../../messages/tr.json")
         : import(`../../messages/${locale}.json`))
     ).default,
   };

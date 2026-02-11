@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 import Navbar from "@/components/navbar";
 import MobileNavbar from "@/components/mobile-navbar";
 import Footer from "@/components/footer";
 import WhatsAppButton from "@/components/whatsapp-button";
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Toaster } from "sonner";
 
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google-site-verification-code", // Add your Google Search Console verification code
+    google: "google-site-verification-code",
     other: {
-      "yandex-verification": "yandex-verification-code", // For Russian market
+      "yandex-verification": "yandex-verification-code",
     },
   },
 };
@@ -155,19 +155,12 @@ const jsonLd = {
   paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
 };
 
-const locales = ["tr", "en", "ar", "fa", "ru"];
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
 export default async function RootLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
+  const locale = await getLocale();
   const messages = await getMessages();
   const isRtl = locale === "ar" || locale === "fa";
 
@@ -176,38 +169,7 @@ export default async function RootLayout({
       <head>
         <link
           rel="canonical"
-          href={`https://visanoistanbul.com/${locale}`}
-        />
-        {/* Language alternates for SEO */}
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/tr"
-          hrefLang="tr"
-        />
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/en"
-          hrefLang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/ar"
-          hrefLang="ar"
-        />
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/fa"
-          hrefLang="fa"
-        />
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/ru"
-          hrefLang="ru"
-        />
-        <link
-          rel="alternate"
-          href="https://visanoistanbul.com/tr"
-          hrefLang="x-default"
+          href="https://visanoistanbul.com"
         />
 
         {/* Geo meta tags for Turkish market */}

@@ -1,7 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
-import { routing } from "@/i18n/routing";
 import { SelectItem } from "@/components/ui/select";
 import LocaleSwitcherSelect from "./locale-switcher-select";
+
+const locales = ["en", "tr", "ar", "ru", "fa"] as const;
 
 export default function LocaleSwitcher() {
   const t = useTranslations("LocaleSwitcher");
@@ -9,7 +10,7 @@ export default function LocaleSwitcher() {
 
   return (
     <LocaleSwitcherSelect defaultValue={locale} label={t("label")}>
-      {routing.locales.map((cur) => (
+      {locales.map((cur) => (
         <SelectItem key={cur} value={cur}>
           {t("locale", { locale: cur })}
         </SelectItem>
