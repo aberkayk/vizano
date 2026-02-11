@@ -8,7 +8,7 @@ export type Locale = (typeof locales)[number];
 
 export default getRequestConfig(async () => {
   const store = await cookies();
-  const requested = store.get("locale")?.value;
+  const requested = store.get("NEXT_LOCALE")?.value;
   const locale = locales.includes(requested as Locale)
     ? (requested as string)
     : defaultLocale;

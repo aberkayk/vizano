@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 import MobileNavbar from "@/components/mobile-navbar";
 import Footer from "@/components/footer";
 import WhatsAppButton from "@/components/whatsapp-button";
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Toaster } from "sonner";
 
@@ -161,7 +161,6 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const locale = await getLocale();
-  const messages = await getMessages();
   const isRtl = locale === "ar" || locale === "fa";
 
   return (
@@ -185,7 +184,7 @@ export default async function RootLayout({
         />
       </head>
       <body className={`${font.className} overflow-x-hidden`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider>
           <MobileNavbar />
           <Navbar />
           <main>{children}</main>
