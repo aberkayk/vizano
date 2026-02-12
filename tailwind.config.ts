@@ -20,9 +20,10 @@ const config = {
     extend: {
       colors: {
         brand: {
-          primary: "var(--brand-primary)", // #1a2b5f
-          secondary: "var(--brand-secondary)", // #34b0ce
-          accent: "var(--brand-accent)", // #f5e6d3
+          primary: "rgb(var(--brand-primary) / <alpha-value>)", // #1a2b5f
+          secondary: "rgb(var(--brand-secondary) / <alpha-value>)", // #34b0ce
+          accent: "rgb(var(--brand-accent) / <alpha-value>)", // #f5e6d3
+          green: "rgb(var(--brand-green) / <alpha-value>)", // #34b0ce
         },
         background: {
           DEFAULT: "hsl(var(--background))",

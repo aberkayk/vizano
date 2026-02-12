@@ -30,10 +30,11 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
 
-    /* Brand Colors */
-    --brand-primary: #1a2b5f; /* Güven veren lacivert */
-    --brand-secondary: #34b0ce; /* Enerjik turkuaz */
-    --brand-accent: #f5e6d3; /* Soft krem */
+    /* Brand Colors - RGB channels for Tailwind opacity support */
+    --brand-primary: 26 43 95; /* #1a2b5f lacivert */
+    --brand-secondary: 52 176 206; /* #34b0ce turkuaz */
+    --brand-accent: 245 230 211; /* #f5e6d3 krem */
+    --brand-green: 52 176 206; /* #34b0ce turkuaz */
 
     /* Background & Text Colors */
     --background-light: #f8f9fa; /* Ferah gri-beyaz */
@@ -66,10 +67,11 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
-    /* Brand Colors */
-    --brand-primary: #1a2b5f; /* Güven veren lacivert */
-    --brand-secondary: #34b0ce; /* Enerjik turkuaz */
-    --brand-accent: #f5e6d3; /* Soft krem */
+    /* Brand Colors - RGB channels for Tailwind opacity support */
+    --brand-primary: 26 43 95; /* #1a2b5f lacivert */
+    --brand-secondary: 52 176 206; /* #34b0ce turkuaz */
+    --brand-accent: 245 230 211; /* #f5e6d3 krem */
+    --brand-green: 52 176 206; /* #34b0ce turkuaz */
 
     /* Background & Text Colors */
     --background-light: #f8f9fa; /* Ferah gri-beyaz */

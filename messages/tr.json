@@ -22,6 +22,7 @@
     "sending": "Gönderiliyor...",
     "whatsapp": "WhatsApp ile İletişime Geçin",
     "whatsapp-message": "Merhaba! Türkiye'de oturum izni almak istiyorum.",
+    "address": "İstanbul, Türkiye",
     "contact-us": "Bizimle İletişime Geçin",
     "contact-description": "Hizmetlerimiz hakkında bilgi almak veya projeleriniz için bizimle iletişime geçebilirsiniz."
   },
@@ -73,49 +74,53 @@
     "whyUs": {
       "title": "Neden Bizi Seçmelisiniz?",
       "experience": "5+ Yıllık Deneyim",
+      "experienceDesc": "Uzman kadromuz, yılların sektör bilgisiyle güvenilir danışmanlık sunar.",
       "support": "7/24 Destek",
+      "supportDesc": "Günün her saati yanınızdayız, her an yardıma hazırız.",
       "success": "1000 Üzerinde Memnun Müşteri",
-      "trust": "100% Müşteri Memnuniyeti"
+      "successDesc": "Binlerce müşterimize Türkiye'deki ihtiyaçlarında başarıyla yardımcı olduk.",
+      "trust": "100% Müşteri Memnuniyeti",
+      "trustDesc": "Müşteri güveni ve memnuniyeti yaptığımız her işin temelini oluşturur."
     },
     "testimonials": {
       "title": "Müşterilerimizin Görüşleri",
       "items": [
         {
-          "name": "Amir Reza",
-          "position": "İran'da Spor Eğitmeni",
-          "comment": "Türkiye'de turistik oturum izninden ret yedikten sonra visano ile görüştüm ve öğrenci oturum iznini 1 hafta içerisinde aldık. Süreç benim için sorunsuz ve çok hızlıydı."
+          "name": "Amir Hosseini",
+          "position": "Tahran'dan Öğrenci",
+          "comment": "Turistik oturum izni başvurum iki kez reddedilmişti ve ne yapacağımı bilmiyordum. Visano ile görüştükten sonra öğrenci oturum izni sürecini başlattık ve 10 gün içinde iznimi aldım. Şimdi İstanbul'da üniversiteye devam ediyorum."
         },
         {
-          "name": "Mona Ateshi",
-          "position": "İran'da Güzellik Uzmanı",
-          "comment": "Türkiye'ye taşınma kararımın ardından referans ile Visano firmasına ulaştım. Kendileri sayesinde çalışma izni aldım ve sorunsuz bir şekilde yaşıyorum. Kendileri ile aynı şekilde araç satın aldım ve tüm süreci onlar yönetti."
+          "name": "Nazanin Karimi",
+          "position": "Isfahan'dan Güzellik Uzmanı",
+          "comment": "Türkiye'de çalışmak istiyordum ama süreçler çok karmaşık geliyordu. Visano çalışma vizesi başvurumu baştan sona yönetti. Hiçbir evrakla uğraşmadım, her şeyi onlar halletti. Şu an İstanbul'da kendi işimi kurdum."
         },
         {
-          "name": "Reza Ahmadi",
-          "position": "İran'dan Öğrenci",
-          "comment": "Visano ile öğrenci oturma izni sürecim çok kolay ilerledi. Tüm evrak işlerimi profesyonelce hallettiler. İstanbul'da eğitim hayatıma sorunsuz başladım."
+          "name": "Mehdi Rezaei",
+          "position": "Tebriz'den Esnaf",
+          "comment": "Türkiye'de daire almak istiyordum ama dili bilmediğim için dolandırılmaktan korkuyordum. Visano emlak araştırmasından tapu işlemlerine kadar her şeyi benim adıma yürüttü. Güvenilir bir yatırım yaptığımı biliyorum."
         },
         {
-          "name": "Sara Mohammadi",
-          "position": "İran'dan IT Uzmanı",
-          "comment": "Çalışma izni ve oturma izni başvurularımda Visano'nin desteği paha biçilemezdi. Şimdi İstanbul'da yazılım şirketinde çalışıyorum."
+          "name": "Fatemeh Ahmadi",
+          "position": "Şiraz'dan Öğrenci",
+          "comment": "Oturum izni almak için birçok yere başvurdum ama hep ret aldım. Bir arkadaşımın tavsiyesiyle Visano'ya ulaştım, öğrenci oturum iznimi çok kısa sürede aldılar. Ayrıca araç almama da yardımcı oldular, tüm süreci onlar yönetti."
         },
         {
-          "name": "Mohammed Al-Rahman",
-          "position": "Dubai'den Yatırımcı",
-          "comment": "Türkiye'deki gayrimenkul yatırımlarım için Visano'yi tercih ettim. Portföy seçiminden tapu işlemlerine kadar her konuda profesyonel destek aldım."
+          "name": "Ali Mohammadi",
+          "position": "Tahran'dan İş İnsanı",
+          "comment": "Türkiye'de iş kurmak istiyordum ama yasal süreçleri hiç bilmiyordum. Visano şirket kurulumundan çalışma vizesine, araç satın almadan muhasebe işlemlerine kadar her konuda yanımdaydı. Tek başıma asla başaramazdım."
         },
         {
-          "name": "Hans Weber",
-          "position": "Almanya'dan Girişimci",
-          "comment": "Türkiye'de şirket kurma sürecim ve araç satın alma işlemlerim Visano sayesinde çok hızlı tamamlandı. Her aşamada yanımda olan güvenilir bir ekip."
+          "name": "Parisa Darvishi",
+          "position": "Meşhed'den Ev Hanımı",
+          "comment": "Eşimle birlikte Türkiye'ye yerleşmek istedik. Visano ailemiz için oturum izni sürecini yönetti ve bize uygun bir ev bulmamıza yardımcı oldu. Tüm alım sürecinde yanımızdaydılar, hiç yalnız hissetmedik."
         }
       ]
     }
   },
   "About": {
     "title": "Hakkımızda",
-    "subtitle": "Güvenilir Çözüm Ortağınız",
+    "subtitle": "Türkiye'de Yaşam ve Yatırım Süreçlerinde Güvenilir Çözüm Ortağınız",
     "established": "2022'den beri",
     "story": {
       "title": "Hikayemiz",

@@ -38,7 +38,7 @@ const HomepageSlider = () => {
       <CarouselContent className="w-full">
         {images.map((image, index) => (
           <CarouselItem key={index}>
-            <div className="relative w-full h-64 md:h-96 ">
+            <div className="relative w-full h-72 md:h-[28rem]">
               <Image
                 src={image.src}
                 alt={image.alt}

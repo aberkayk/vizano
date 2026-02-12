@@ -14,7 +14,6 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
-import LogoWhite from "../../public/logo-white.png";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -38,32 +37,21 @@ const MobileNavbar = () => {
   return (
     <div
       className={cn(
-        "sticky bg-white top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-4 border-black/10",
-        scrolling && "transition bg-black/70 text-white"
+        "sticky top-0 z-50 flex md:hidden h-[70px] min-h-[70px] text-sm px-4 bg-white border-black/10 transition-all duration-300",
+        scrolling && "bg-white/95 backdrop-blur-md shadow-md"
       )}
     >
       <div className="h-full w-full flex gap-3 justify-between items-center xl:container">
         <div className="flex items-center justify-between w-full">
           <Link href="/home">
             <div className="relative">
-              {scrolling ? (
-                <Image
-                  src={LogoWhite}
-                  alt={"Logo"}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  width={150}
-                  height={50}
-                />
-              ) : (
-                <Image
-                  src={Logo}
-                  alt={"Logo"}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  width={150}
-                  height={50}
-                  className={cn(scrolling && "hidden")}
-                />
-              )}
+              <Image
+                src={Logo}
+                alt={"Logo"}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                width={150}
+                height={50}
+              />
             </div>
           </Link>
           <div className="flex gap-2">
@@ -93,9 +81,9 @@ const MobileNavbar = () => {
                       <SheetClose className="w-fit h-full flex justify-center">
                         <p
                           className={cn(
-                            "h-full w-64 transition px-3 py-2 text-xl border-b-2 border-transparent hover:border-brand-green hover:border-b-2 border-spacing-4 hover:text-brand-green",
+                            "h-full w-64 transition px-3 py-2 text-xl rounded-md hover:text-brand-secondary hover:bg-brand-secondary/10",
                             pathname.includes(item.href) &&
-                              "text-brand-green border-b-2 border-spacing-4 border-brand-green"
+                              "text-brand-primary bg-brand-secondary/10"
                           )}
                         >
                           {t(item.label)}
@@ -104,7 +92,7 @@ const MobileNavbar = () => {
                     </Link>
                   ))}
                 </div>
-                <div className="w-full bg-brand-green h-20 flex justify-center items-center">
+                <div className="w-full bg-brand-secondary h-20 flex justify-center items-center">
                   <SheetClose
                     asChild
                     className="w-full flex justify-center"

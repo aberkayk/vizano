@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
-import LogoWhite from "../../public/logo-white.png";
 import { usePathname } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -38,42 +37,29 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "sticky max-w-screen bg-white top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-4 shadow-sm bg-background border-black/10",
-        scrolling && "transition text-white bg-black/70"
+        "sticky max-w-screen top-0 z-50 hidden md:flex h-[70px] min-h-[70px] px-4 bg-white shadow-sm border-black/10 transition-all duration-300",
+        scrolling && "bg-white/95 backdrop-blur-md shadow-md"
       )}
     >
       <div className="h-full w-full gap-3 xl:container grid grid-cols-5 items-center">
         <Link href="/home">
           <div className="relative">
-            {scrolling ? (
-              <Image
-                src={LogoWhite}
-                alt={"Logo"}
-                sizes="(max-width: 768px) 100vw, 33vw"
-                width={150}
-                height={50}
-              />
-            ) : (
-              <Image
-                src={Logo}
-                alt={"Logo"}
-                sizes="(max-width: 768px) 100vw, 33vw"
-                width={150}
-                height={50}
-                className={cn(scrolling && "hidden")}
-              />
-            )}
+            <Image
+              src={Logo}
+              alt={"Logo"}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              width={150}
+              height={50}
+            />
           </div>
         </Link>
-        <div className="flex gap-3 col-span-3 justify-center font-semibold">
+        <div className="flex gap-2 col-span-3 justify-center font-semibold">
           {navbarItems.map((item, index) => (
             <Link
               className={cn(
-                "border-transparent px-3 py-[6px] text-base hover:text-brand-green hover:border-b-2 hover:border-brand-green",
+                "px-4 py-[6px] text-base rounded-md transition-colors duration-200 hover:text-brand-secondary",
                 pathname.includes(item.href) &&
-                  "text-brand-green border-b-2 border-spacing-4 border-brand-green",
-                scrolling &&
-                  "text-white border-white hover:border-white hover:text-white"
+                  "bg-brand-secondary/10 text-brand-primary"
               )}
               href={item.href}
               key={index.toString()}

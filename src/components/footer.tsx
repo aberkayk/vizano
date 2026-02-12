@@ -1,9 +1,8 @@
 import { navbarItems } from "@/lib/constants";
-import Logo from "../../public/logo.png";
-import { Mail, MapPin, Phone, Printer } from "lucide-react";
+import Logo from "../../public/logo-white.png";
+import { Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { Separator } from "./ui/separator";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -12,11 +11,10 @@ const Footer = () => {
   const y = useTranslations("Footer");
 
   return (
-    <div className="w-full ">
+    <div className="w-full bg-gray-900 text-white">
       <div className="w-full xl:container flex gap-8 flex-col py-12 px-4">
-        <Separator className="w-full" />
-        <div className="flex justify-between w-full gap-2 lg:gap-8">
-          {/* Hızlı Linkler */}
+        <div className="flex justify-between w-full gap-8 flex-col lg:flex-row">
+          {/* Quick Links */}
           <div className="flex flex-col gap-4">
             <h3 className="font-semibold text-lg">{y("quickLinks")}</h3>
             <div className="flex flex-col gap-2">
@@ -24,7 +22,7 @@ const Footer = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-text-secondary hover:font-bold transition-colors"
+                  className="text-gray-400 hover:text-brand-secondary transition-colors"
                 >
                   {t(item.label)}
                 </Link>
@@ -32,7 +30,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center justify-center">
+          {/* Logo & Description */}
+          <div className="flex flex-col items-center justify-center gap-4">
             <Link href="/home">
               <div className="relative">
                 <Image
@@ -44,19 +43,36 @@ const Footer = () => {
                 />
               </div>
             </Link>
+            <div className="flex gap-4 mt-2">
+              <a
+                href="https://www.instagram.com/visanoistanbul"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-brand-secondary transition-colors"
+              >
+                <Instagram size={22} />
+              </a>
+              <a
+                href="https://wa.me/905066695796"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-brand-secondary transition-colors"
+              >
+                <MessageCircle size={22} />
+              </a>
+            </div>
           </div>
 
-          {/* İletişim Bilgileri */}
+          {/* Contact Info */}
           <div className="flex lg:justify-end">
-            <div className="flex flex-col gap-4 ">
+            <div className="flex flex-col gap-4">
               <h3 className="font-semibold text-lg">{y("contact")}</h3>
               <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-2 text-text-secondary">
+                <div className="flex items-center gap-2 text-gray-400">
                   <MapPin size={18} />
                   <span>{y("address")}</span>
                 </div>
-
-                <div className="flex items-center gap-2 text-text-secondary">
+                <div className="flex items-center gap-2 text-gray-400">
                   <Mail size={18} />
                   <span>{y("email")}</span>
                 </div>
@@ -64,11 +80,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <Separator />
-
-        <div className="w-full flex flex-col xl:flex-row gap-2 xl:gap-10 justify-between text-sm  lg:text-base">
-          <p className="text-text-secondary">{y("rights")}</p>
+      {/* Copyright bar */}
+      <div className="w-full bg-gray-950">
+        <div className="xl:container px-4 py-4 flex flex-col xl:flex-row gap-2 xl:gap-10 justify-between text-sm lg:text-base">
+          <p className="text-gray-400">{y("rights")}</p>
         </div>
       </div>
     </div>

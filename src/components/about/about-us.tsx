@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import HouseImage from "../../../public/images/house.png";
 import Image from "next/image";
+import { Heart, Eye, Shield, GraduationCap } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -19,6 +20,8 @@ const staggerContainer = {
     },
   },
 };
+
+const valueIcons = [Heart, Eye, Shield, GraduationCap];
 
 const AboutUs = () => {
   const t = useTranslations("About");
@@ -49,23 +52,24 @@ const AboutUs = () => {
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {["integrity", "transparency", "reliability", "expertise"].map(
-            (value, index) => (
-              <motion.div
-                key={value}
-                className="group hover:scale-105 transition-transform duration-300 ease-in-out"
-              >
-                <div className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 mb-6 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                    <span className="text-2xl text-primary">
-                      {index + 1}
-                    </span>
+            (value, index) => {
+              const Icon = valueIcons[index];
+              return (
+                <motion.div
+                  key={value}
+                  className="group hover:scale-105 transition-transform duration-300 ease-in-out"
+                >
+                  <div className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="w-14 h-14 mb-6 rounded-xl bg-brand-secondary/10 flex items-center justify-center mx-auto">
+                      <Icon className="w-7 h-7 text-brand-secondary" />
+                    </div>
+                    <h3 className="text-xl font-medium text-center mb-4">
+                      {t(`values.${value}`)}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-medium text-center mb-4">
-                    {t(`values.${value}`)}
-                  </h3>
-                </div>
-              </motion.div>
-            )
+                </motion.div>
+              );
+            }
           )}
         </div>
       </motion.div>
@@ -87,7 +91,7 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-card p-8 rounded-2xl shadow-lg"
+          className="bg-card p-8 rounded-2xl shadow-lg border-s-4 border-brand-secondary"
         >
           <h2 className="text-2xl font-semibold mb-6">
             {t("story.title")}
@@ -102,7 +106,7 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-card p-8 rounded-2xl shadow-lg"
+          className="bg-card p-8 rounded-2xl shadow-lg border-s-4 border-brand-secondary"
         >
           <h2 className="text-2xl font-semibold mb-6">
             {t("journey.title")}
@@ -119,12 +123,12 @@ const AboutUs = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="max-w-3xl mx-auto text-center bg-card p-10 rounded-2xl shadow-lg"
+        className="max-w-3xl mx-auto text-center bg-brand-primary text-white p-10 rounded-2xl shadow-lg"
       >
         <h2 className="text-3xl font-semibold mb-6">
           {t("mission.title")}
         </h2>
-        <p className="text-lg leading-relaxed text-muted-foreground">
+        <p className="text-lg leading-relaxed text-white/80">
           {t("mission.content")}
         </p>
       </motion.div>
