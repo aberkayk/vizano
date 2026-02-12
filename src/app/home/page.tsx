@@ -11,6 +11,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("hero.title"),
     description: t("hero.description"),
+    openGraph: {
+      title: t("hero.title"),
+      description: t("hero.description"),
+      url: "https://visanoistanbul.com/home",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://visanoistanbul.com/home",
+    },
   };
 }
 

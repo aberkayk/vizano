@@ -1,10 +1,27 @@
 import Image from "next/image";
 import React from "react";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 import ContactForm from "@/components/contact-form";
 import ContactImage from "../../../public/images/contact.png";
 import WhatsAppButton from "@/components/whatsapp-button";
 import { MapPin, Mail } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "İletişim - Oturum İzni ve Yatırım Danışmanlığı için Bize Ulaşın",
+  description:
+    "Türkiye'de oturum izni, çalışma vizesi, gayrimenkul yatırımı veya araç alımı konusunda danışmanlık almak için bizimle iletişime geçin. WhatsApp, e-posta veya form ile 7/24 ulaşabilirsiniz.",
+  openGraph: {
+    title: "İletişim | Visano - Türkiye Oturum İzni Danışmanlığı",
+    description:
+      "Oturum izni başvurunuz veya yatırım danışmanlığı için bizimle iletişime geçin. İstanbul merkezli profesyonel destek.",
+    url: "https://visanoistanbul.com/contact",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://visanoistanbul.com/contact",
+  },
+};
 
 export default async function ContactPage() {
   const t = await getTranslations("ContactForm");
