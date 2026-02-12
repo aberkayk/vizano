@@ -282,7 +282,7 @@
   dependencies:
     tslib "2"
 
-"@formatjs/intl-localematcher@0.8.1":
+"@formatjs/intl-localematcher@^0.8.1", "@formatjs/intl-localematcher@0.8.1":
   version "0.8.1"
   resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.8.1.tgz"
   integrity sha512-xwEuwQFdtSq1UKtQnyTZWC+eHdv7Uygoa+H2k/9uzBVQjDyp9r20LNDNKedWXll7FssT3GRHvqsdJGYSUWqYFA==
@@ -1015,6 +1015,11 @@
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+
+"@types/negotiator@^0.6.4":
+  version "0.6.4"
+  resolved "https://registry.npmjs.org/@types/negotiator/-/negotiator-0.6.4.tgz"
+  integrity sha512-elf6BsTq+AkyNsb2h5cGNst2Mc7dPliVoAPm1fXglC/BM3f2pFA40BaSSv3E5lyHteEawVKLP+8TwiY1DMNb3A==
 
 "@types/node@*", "@types/node@^20":
   version "20.14.11"
