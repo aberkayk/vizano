@@ -70,6 +70,10 @@ export const metadata: Metadata = {
     "инвестиции в недвижимость турция",
   ],
   authors: [{ name: "Visano Consulting" }],
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",

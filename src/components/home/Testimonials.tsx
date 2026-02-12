@@ -31,7 +31,7 @@ export default function Testimonials() {
                 transition={{ delay: index * 0.2 }}
                 className="relative bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-s-4 border-brand-secondary"
               >
-                <Quote className="absolute top-4 right-4 w-10 h-10 text-brand-secondary/20" />
+                <Quote className="absolute top-4 end-4 w-10 h-10 text-brand-secondary/20" />
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
                     <span className="text-brand-primary font-bold text-lg">
